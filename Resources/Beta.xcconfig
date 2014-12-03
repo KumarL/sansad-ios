@@ -1,0 +1,15 @@
+//
+//  Beta.xcconfig
+//  Congress
+//
+//  Created by Daniel Cloud on 1/14/13.
+//  Copyright (c) 2013 Sunlight Foundation. All rights reserved.
+//
+
+BUILD_NUMBER=???
+#include "buildnumber.xcconfig"
+
+BUNDLE_DISPLAY_NAME_SUFFIX=ß
+BUNDLE_ID_SUFFIX=.beta
+
+GCC_PREPROCESSOR_DEFINITIONS= CONFIGURATION_$(CONFIGURATION)

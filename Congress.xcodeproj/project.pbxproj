@@ -1,0 +1,1820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187A11491F3A454F8BBC7874 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C05D06F169134ED1B1E4B5C4 /* libPods.a */; };
+		2F0331D4175D3C2A00A1DEDD /* SFLegislatorSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0331D3175D3C2A00A1DEDD /* SFLegislatorSegmentedViewController.m */; };
+		2F0331D7175E7C8E00A1DEDD /* SFBillSponsorCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0331D6175E7C8E00A1DEDD /* SFBillSponsorCellTransformer.m */; };
+		2F0331DA175E7E1100A1DEDD /* SFLegislatorBillsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0331D9175E7E1000A1DEDD /* SFLegislatorBillsTableViewController.m */; };
+		2F0331DD175FA1ED00A1DEDD /* SFLegislatorVotingRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0331DC175FA1EC00A1DEDD /* SFLegislatorVotingRecordTableViewController.m */; };
+		2F0331E0175FADB700A1DEDD /* SFRollCallVoteByLegislatorCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0331DF175FADB700A1DEDD /* SFRollCallVoteByLegislatorCellTransformer.m */; };
+		2F04176A1742BD1C0087C1AB /* SFFollowHowToView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0417691742BD1C0087C1AB /* SFFollowHowToView.m */; };
+		2F09B27216555D500047461E /* SFSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F09B27116555D500047461E /* SFSettings.m */; };
+		2F09B2E916558D440047461E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F09B2E816558D440047461E /* MobileCoreServices.framework */; };
+		2F09B2EB16558D690047461E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F09B2EA16558D690047461E /* SystemConfiguration.framework */; };
+		2F09B2F1165596C30047461E /* SFCongressApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F09B2F0165596C30047461E /* SFCongressApiClient.m */; };
+		2F09B2F41655B4A80047461E /* SFLegislatorService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F09B2F31655B4A80047461E /* SFLegislatorService.m */; };
+		2F0E388A16F8AA040043B4FD /* SFCalloutBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E388916F8AA040043B4FD /* SFCalloutBackgroundView.m */; };
+		2F0E389316F90BD80043B4FD /* NSString+Congress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E389216F90BD80043B4FD /* NSString+Congress.m */; };
+		2F0E38B416FB5D020043B4FD /* SFCongressNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E38B316FB5D010043B4FD /* SFCongressNavigationController.m */; };
+		2F0E38C416FCE42E0043B4FD /* SVPullToRefreshView+Congress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E38C316FCE42D0043B4FD /* SVPullToRefreshView+Congress.m */; };
+		2F0F00D9167A766700C3344F /* SFLegislatorDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F00D8167A766700C3344F /* SFLegislatorDetailView.m */; };
+		2F0F00DC167A7D0100C3344F /* SFLegislatorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F00DB167A7D0100C3344F /* SFLegislatorDetailViewController.m */; };
+		2F0FFFED1677A0A100C3344F /* NSDate+Congress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0FFFEC1677A0A100C3344F /* NSDate+Congress.m */; };
+		2F15C42716BC52070069D929 /* SFSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F15C42616BC52070069D929 /* SFSegmentedViewController.m */; };
+		2F15C43016BC52790069D929 /* SFSegmentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F15C42F16BC52790069D929 /* SFSegmentedView.m */; };
+		2F15C43316BC784B0069D929 /* SFBillSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F15C43116BC784B0069D929 /* SFBillSegmentedViewController.m */; };
+		2F15C9F0169C962E0050DCAE /* SFSynchronizedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F15C9EF169C962E0050DCAE /* SFSynchronizedObject.m */; };
+		2F15C9F3169C96EC0050DCAE /* SFBill.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F15C9F2169C96EC0050DCAE /* SFBill.m */; };
+		2F15C9F6169C96ED0050DCAE /* SFLegislator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F15C9F5169C96ED0050DCAE /* SFLegislator.m */; };
+		2F18C50B171CB26600C40783 /* SFSearchBillsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F18C50A171CB26600C40783 /* SFSearchBillsTableViewController.m */; };
+		2F18C50E171CB3B300C40783 /* SFBillSearchCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F18C50D171CB3B300C40783 /* SFBillSearchCellTransformer.m */; };
+		2F19CBAF1757F2FD00185BB2 /* UIImage+SFCongressAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F19CBAE1757F2FD00185BB2 /* UIImage+SFCongressAppStyle.m */; };
+		2F1B05EC17033F9900A26712 /* IIViewDeckController+SFStatePreservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B05EB17033F9900A26712 /* IIViewDeckController+SFStatePreservation.m */; };
+		2F1D5EB116D7CCFD00F2800D /* SFCongressURLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1D5EB016D7CCFD00F2800D /* SFCongressURLService.m */; };
+		2F1DBB85176128E900118FDF /* SFBillTypeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DBB84176128E900118FDF /* SFBillTypeTransformer.m */; };
+		2F1DBB8917612B7000118FDF /* SFBillIdTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DBB8817612B7000118FDF /* SFBillIdTransformer.m */; };
+		2F241644184D3F8C00337419 /* SFInformationSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F241643184D3F8C00337419 /* SFInformationSectionViewController.m */; };
+		2F241647184D3FCC00337419 /* SFInformationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F241646184D3FCC00337419 /* SFInformationView.m */; };
+		2F24164A184F915F00337419 /* SFSynchronizedObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F241649184F915F00337419 /* SFSynchronizedObjectManager.m */; };
+		2F247DC01671389B006AD075 /* SFMainDeckTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F247DBF1671389B006AD075 /* SFMainDeckTableViewController.m */; };
+		2F26C040167BC52F009E85C8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F26C03F167BC52F009E85C8 /* Crashlytics.framework */; };
+		2F38B6BA1856206500000064 /* SFSettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38B6B91856206500000064 /* SFSettingsDataSource.m */; };
+		2F38B6BD1856307600000064 /* SFSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38B6BC1856307600000064 /* SFSettingCell.m */; };
+		2F3FA8A9166812A200A63CFF /* SFMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3FA8A8166812A200A63CFF /* SFMenuViewController.m */; };
+		2F41E8321715B391009E23F0 /* SFDefaultLegislatorCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E8311715B391009E23F0 /* SFDefaultLegislatorCellTransformer.m */; };
+		2F41E83B1715F964009E23F0 /* SFDefaultBillActionCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E83A1715F964009E23F0 /* SFDefaultBillActionCellTransformer.m */; };
+		2F41E83E1716006B009E23F0 /* SFDefaultRollCallVoteCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E83D1716006B009E23F0 /* SFDefaultRollCallVoteCellTransformer.m */; };
+		2F41E84117160FF0009E23F0 /* SFLegislatorVoteCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41E84017160FEF009E23F0 /* SFLegislatorVoteCellTransformer.m */; };
+		2F42A44718BEA40700D3ED24 /* SFBillNoExtraDataCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F42A44618BEA40700D3ED24 /* SFBillNoExtraDataCellTransformer.m */; };
+		2F42A44A18BEA77F00D3ED24 /* SFFollowingBillsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F42A44918BEA77F00D3ED24 /* SFFollowingBillsTableViewController.m */; };
+		2F4D29A716BAD9DD007BDB0E /* UIBarButtonItem+SFCongressAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D29A616BAD9DD007BDB0E /* UIBarButtonItem+SFCongressAppStyle.m */; };
+		2F4D29B316BB0A93007BDB0E /* SFRollCallVote.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D29B216BB0A92007BDB0E /* SFRollCallVote.m */; };
+		2F4D29B616BB0BB0007BDB0E /* SFBillAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D29B516BB0BB0007BDB0E /* SFBillAction.m */; };
+		2F4D29B916BB22E1007BDB0E /* SFActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D29B816BB22E0007BDB0E /* SFActionTableViewController.m */; };
+		2F58C4C8165A82140010FD45 /* SFBillService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C4C7165A82140010FD45 /* SFBillService.m */; };
+		2F58C602165AA1DC0010FD45 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F58C600165AA1C20010FD45 /* QuartzCore.framework */; };
+		2F6084B016C0557500EED484 /* SFFollowingSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6084AF16C0557400EED484 /* SFFollowingSectionViewController.m */; };
+		2F6084B316C1A12E00EED484 /* SFBillsSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6084B216C1A12E00EED484 /* SFBillsSectionView.m */; };
+		2F6DBFC1166E4317007330CB /* SFBillDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6DBFC0166E4317007330CB /* SFBillDetailViewController.m */; };
+		2F6DBFF8166E5906007330CB /* SFBillDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6DBFF7166E5906007330CB /* SFBillDetailView.m */; };
+		2F6DC02F166FAF0C007330CB /* SFLegislatorsSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6DC02E166FAF0C007330CB /* SFLegislatorsSectionViewController.m */; };
+		2F7766DF17C403B500E1BA08 /* UIDevice+VersionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7766DE17C403B500E1BA08 /* UIDevice+VersionCheck.m */; };
+		2F7766E117C50B1000E1BA08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7766E017C50B1000E1BA08 /* Images.xcassets */; };
+		2F7C09F11843A33B00B28B82 /* SFDataTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C09F01843A33B00B28B82 /* SFDataTableDataSource.m */; };
+		2F834E6C165541EC006238AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F834E6B165541EC006238AB /* UIKit.framework */; };
+		2F834E6E165541EC006238AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F834E6D165541EC006238AB /* Foundation.framework */; };
+		2F834E70165541EC006238AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F834E6F165541EC006238AB /* CoreGraphics.framework */; };
+		2F834E93165545C5006238AB /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F834E91165545C5006238AB /* SFAppDelegate.m */; };
+		2F834EA0165545D4006238AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F834E96165545D4006238AB /* main.m */; };
+		2F834EA2165545D4006238AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F834E99165545D4006238AB /* InfoPlist.strings */; };
+		2F85741B16E541B50073EFA0 /* SFOpticView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F85741A16E541B50073EFA0 /* SFOpticView.m */; };
+		2F8E294716EE2999006F54E1 /* SFCongressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E294616EE2999006F54E1 /* SFCongressButton.m */; };
+		2F8E295416EE77C0006F54E1 /* SFSettingsSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E295316EE77C0006F54E1 /* SFSettingsSectionViewController.m */; };
+		2F98E1091836BC870012BC6E /* SFPushConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98E1081836BC870012BC6E /* SFPushConfig.m */; };
+		2F9B88C5183BC376009504C9 /* SFTagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B88C4183BC376009504C9 /* SFTagManager.m */; };
+		2F9F7AF416DBCB5600DE8AF1 /* UIView+ViewGeometryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7AF316DBCB5600DE8AF1 /* UIView+ViewGeometryAdditions.m */; };
+		2F9F7AFA16DD65D900DE8AF1 /* SFDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F7AF916DD65D900DE8AF1 /* SFDataTableViewController.m */; };
+		2FA11C141714684400C12583 /* SFCellDataTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA11C131714684400C12583 /* SFCellDataTransformers.m */; };
+		2FA11C1717146A5700C12583 /* SFDefaultBillCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA11C1617146A5700C12583 /* SFDefaultBillCellTransformer.m */; };
+		2FA11C1A17146B1400C12583 /* SFCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA11C1917146B1400C12583 /* SFCellData.m */; };
+		2FA4865F16D52CBA0058FD24 /* SFMixedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA4865E16D52CBA0058FD24 /* SFMixedTableViewController.m */; };
+		2FA90438172AC1760077AB49 /* SFSettingsSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA90437172AC1760077AB49 /* SFSettingsSectionView.m */; };
+		2FAC77821843C12900020B3A /* SFLegislatorTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77811843C12900020B3A /* SFLegislatorTableDataSource.m */; };
+		2FAC77851843F42100020B3A /* SFMixedTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77841843F42100020B3A /* SFMixedTableDataSource.m */; };
+		2FAC77881843F7D800020B3A /* SFActionTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77871843F7D800020B3A /* SFActionTableDataSource.m */; };
+		2FAC778B1843FA6900020B3A /* SFBillTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC778A1843FA6900020B3A /* SFBillTableDataSource.m */; };
+		2FAC778E1843FDFB00020B3A /* SFBillSearchTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC778D1843FDFB00020B3A /* SFBillSearchTableDataSource.m */; };
+		2FAC7791184418B700020B3A /* SFLegislatorVoteTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC7790184418B700020B3A /* SFLegislatorVoteTableDataSource.m */; };
+		2FAC77971844F10C00020B3A /* SFValue1TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77961844F10C00020B3A /* SFValue1TableCell.m */; };
+		2FAC779A1844F77D00020B3A /* SFVoteCountTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77991844F77D00020B3A /* SFVoteCountTableDataSource.m */; };
+		2FAC779D1845180200020B3A /* SFHearingsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC779C1845180200020B3A /* SFHearingsTableDataSource.m */; };
+		2FAC77A018452AB600020B3A /* SFCommitteeHearingsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC779F18452AB600020B3A /* SFCommitteeHearingsTableDataSource.m */; };
+		2FAC77A318452E5700020B3A /* SFCommitteesTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77A218452E5700020B3A /* SFCommitteesTableDataSource.m */; };
+		2FAC77A618452F0200020B3A /* SFCommitteeMembersTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77A518452F0100020B3A /* SFCommitteeMembersTableDataSource.m */; };
+		2FAC77A91845314000020B3A /* SFLegislatorBillsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77A81845314000020B3A /* SFLegislatorBillsTableDataSource.m */; };
+		2FAC77AC184536C700020B3A /* SFLegislatorVotingRecordDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77AB184536C700020B3A /* SFLegislatorVotingRecordDataSource.m */; };
+		2FAC77B618468E3900020B3A /* SFEditFollowedItemsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC77B518468E3900020B3A /* SFEditFollowedItemsDataSource.m */; };
+		2FB6176B17171B2D0037A5E5 /* SFLegislatorVoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB6176A17171B2D0037A5E5 /* SFLegislatorVoteTableViewController.m */; };
+		2FB61774171743440037A5E5 /* SFBasicTextCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB61773171743440037A5E5 /* SFBasicTextCellTransformer.m */; };
+		2FB617811718B0AF0037A5E5 /* SFTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB617801718B0AF0037A5E5 /* SFTableHeaderView.m */; };
+		2FBAC22516B88C51009198ED /* SFLegislatorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBAC22416B88C51009198ED /* SFLegislatorTableViewController.m */; };
+		2FC88385170CCA9A00CD9E57 /* NSURL+Congress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC88384170CCA9A00CD9E57 /* NSURL+Congress.m */; };
+		2FC8838B170E0ECC00CD9E57 /* SFMapToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8838A170E0ECC00CD9E57 /* SFMapToggleButton.m */; };
+		2FCE888216F10A1D00DDB3AF /* SFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE888116F10A1D00DDB3AF /* SFLabel.m */; };
+		2FCE888516F2561D00DDB3AF /* SFFollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE888416F2561D00DDB3AF /* SFFollowButton.m */; };
+		2FD1544616C4390200B5EF3D /* SFRollCallVoteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1544516C4390100B5EF3D /* SFRollCallVoteService.m */; };
+		2FD1544F16C451E900B5EF3D /* SFVoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1544E16C451E900B5EF3D /* SFVoteDetailViewController.m */; };
+		2FD1545216C4522600B5EF3D /* SFVoteDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1545116C4522600B5EF3D /* SFVoteDetailView.m */; };
+		2FD1E6A9166913FA005B3C97 /* SFNavTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1E6A8166913FA005B3C97 /* SFNavTableCell.m */; };
+		2FD754F0170A1F51009C48D8 /* SFImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD754EF170A1F50009C48D8 /* SFImageButton.m */; };
+		2FD754F4170A2624009C48D8 /* NSMutableAttributedString+Congress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD754F3170A2624009C48D8 /* NSMutableAttributedString+Congress.m */; };
+		2FDAC55B171F389C0067F0D8 /* SFDateFormatterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDAC55A171F389C0067F0D8 /* SFDateFormatterUtil.m */; };
+		2FEA7BA116694BBD008C5E79 /* SFActivitySectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA7BA016694BBD008C5E79 /* SFActivitySectionViewController.m */; };
+		2FEA8DA116AF27E60022B860 /* SFShareableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA8DA016AF27E60022B860 /* SFShareableViewController.m */; };
+		2FEA8DF916B07BCE0022B860 /* SFBillsSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEA8DF716B07BCE0022B860 /* SFBillsSectionViewController.m */; };
+		2FED56DA16E7E2EB00F0E9A5 /* SFCongressAppStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FED56D916E7E2EB00F0E9A5 /* SFCongressAppStyle.m */; };
+		2FED56E916E8F11400F0E9A5 /* SFCongressTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FED56E816E8F11400F0E9A5 /* SFCongressTableViewController.m */; };
+		2FED56FE16E94EDA00F0E9A5 /* SFTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FED56FD16E94ED800F0E9A5 /* SFTableCell.m */; };
+		2FF29E4F1655583600FAB0E3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF29E4E1655583600FAB0E3 /* libz.dylib */; };
+		2FF4F7AE16CED13500F9AFD9 /* SFBillsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4F7AD16CED13500F9AFD9 /* SFBillsTableViewController.m */; };
+		2FF728EC16A99A66007488BB /* SFDataArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF728EB16A99A65007488BB /* SFDataArchiver.m */; };
+		3F061911174D7A9400D595D4 /* SFDistrictMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F061910174D7A9400D595D4 /* SFDistrictMapViewController.m */; };
+		3F27C71D179A487E000DC68F /* SFDefaultCommitteeCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F27C71C179A487E000DC68F /* SFDefaultCommitteeCellTransformer.m */; };
+		3F2CDD831757A58D00BD8BCF /* SFMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2CDD821757A58D00BD8BCF /* SFMessage.m */; };
+		3F2E1E7F17C280C3001CADD1 /* SFCommitteeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E1E7617C280C3001CADD1 /* SFCommitteeDetailViewController.m */; };
+		3F2E1E8017C280C3001CADD1 /* SFCommitteeMembersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E1E7817C280C3001CADD1 /* SFCommitteeMembersTableViewController.m */; };
+		3F2E1E8117C280C3001CADD1 /* SFCommitteeSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E1E7A17C280C3001CADD1 /* SFCommitteeSegmentedViewController.m */; };
+		3F2E1E8217C280C3001CADD1 /* SFCommitteesSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E1E7C17C280C3001CADD1 /* SFCommitteesSectionViewController.m */; };
+		3F2E1E8317C280C3001CADD1 /* SFCommitteesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E1E7E17C280C3001CADD1 /* SFCommitteesTableViewController.m */; };
+		3F321CF01811E1AE0079149F /* SFContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F321CEF1811E1AE0079149F /* SFContentView.m */; };
+		3F36A3E516EE5AB600C61535 /* SFMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F36A3E416EE5AB600C61535 /* SFMapView.m */; };
+		3F373CF9181228BC007F68C0 /* NSLayoutConstraint+Congress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F373CF8181228BC007F68C0 /* NSLayoutConstraint+Congress.m */; };
+		3F44A3E917301D7A00F2B3CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F44A3E817301D7A00F2B3CA /* MapKit.framework */; };
+		3F44A3EB17301F3100F2B3CA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F44A3EA17301F3100F2B3CA /* AddressBook.framework */; };
+		3F4B145119B8C48000F34D5B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4B145019B8C48000F34D5B /* MessageUI.framework */; };
+		3F4B145419BA5CCF00F34D5B /* SFDebugSettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B145319BA5CCF00F34D5B /* SFDebugSettingsDataSource.m */; };
+		3F4B145719BA5E9700F34D5B /* SFDebugSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B145619BA5E9700F34D5B /* SFDebugSettingsViewController.m */; };
+		3F54BCEB197EC83C00DBF5DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F54BCEA197EC83C00DBF5DF /* Main.storyboard */; };
+		3F54BCF2197EE5B000DBF5DF /* IBAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F54BCF1197EE5B000DBF5DF /* IBAssets.xcassets */; };
+		3F693A9117654DFD0035AFF4 /* SFViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F693A9017654DFD0035AFF4 /* SFViewDeckController.m */; };
+		3F73A6F817552B810088BE6A /* SFLocalLegislatorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F73A6F717552B810088BE6A /* SFLocalLegislatorsViewController.m */; };
+		3F79268616F10E0F00C10CC2 /* SFBoundaryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F79268516F10E0F00C10CC2 /* SFBoundaryService.m */; };
+		3F83884D17BC257D002F1B01 /* SFCommitteeDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F83884C17BC257D002F1B01 /* SFCommitteeDetailView.m */; };
+		3F86F1C319B0F51200BC3FBC /* SFOCEmailConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F86F1C219B0F51200BC3FBC /* SFOCEmailConfirmationViewController.m */; };
+		3F95BCF516F90D6D009C879D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3F95BCF416F90D6D009C879D /* LICENSE */; };
+		3FA1BEB217CD50CA00F47DF5 /* SFActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1BEA717CD50CA00F47DF5 /* SFActivity.m */; };
+		3FA1BEB317CD50CA00F47DF5 /* SFCongressGovActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1BEA917CD50CA00F47DF5 /* SFCongressGovActivity.m */; };
+		3FA1BEB417CD50CA00F47DF5 /* SFFacebookActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1BEAB17CD50CA00F47DF5 /* SFFacebookActivity.m */; };
+		3FA1BEB517CD50CA00F47DF5 /* SFGovTrackActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1BEAD17CD50CA00F47DF5 /* SFGovTrackActivity.m */; };
+		3FA1BEB617CD50CA00F47DF5 /* SFOpenCongressActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1BEAF17CD50CA00F47DF5 /* SFOpenCongressActivity.m */; };
+		3FA1BEB717CD50CA00F47DF5 /* SFSafariActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1BEB117CD50CA00F47DF5 /* SFSafariActivity.m */; };
+		3FA2ED7A17A850D900DCC8F0 /* SFCommitteeMemberCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2ED7917A850D900DCC8F0 /* SFCommitteeMemberCellTransformer.m */; };
+		3FA2ED7E17A8681B00DCC8F0 /* SFHearing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2ED7D17A8681B00DCC8F0 /* SFHearing.m */; };
+		3FA2ED8117A86E7800DCC8F0 /* SFHearingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2ED8017A86E7800DCC8F0 /* SFHearingService.m */; };
+		3FA7BFDF17DF9DA200070ECF /* messagestyles.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7BFDE17DF9DA200070ECF /* messagestyles.json */; };
+		3FAE671A1758ECE200F1EEE8 /* SFAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE67191758ECE200F1EEE8 /* SFAppSettings.m */; };
+		3FB2E88D1804612D00E57473 /* SFBillActivityItemSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2E88C1804612D00E57473 /* SFBillActivityItemSource.m */; };
+		3FB2E89018046AD800E57473 /* SFTextActivityItemSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2E88F18046AD800E57473 /* SFTextActivityItemSource.m */; };
+		3FB2E8931804713000E57473 /* SFLegislatorActivityItemSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2E8921804713000E57473 /* SFLegislatorActivityItemSource.m */; };
+		3FB2E896180474B200E57473 /* SFCommitteeActivityItemSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2E895180474B200E57473 /* SFCommitteeActivityItemSource.m */; };
+		3FB2E89918048B2A00E57473 /* SFCommitteeHearingCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2E89818048B2A00E57473 /* SFCommitteeHearingCellTransformer.m */; };
+		3FB2E89C18048D1E00E57473 /* SFCommitteeHearingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2E89B18048D1E00E57473 /* SFCommitteeHearingsTableViewController.m */; };
+		3FB4304917A8A55A00956FD6 /* SFDefaultHearingCellTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4304817A8A55A00956FD6 /* SFDefaultHearingCellTransformer.m */; };
+		3FB4304C17A8A80E00956FD6 /* SFHearingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4304B17A8A80E00956FD6 /* SFHearingsTableViewController.m */; };
+		3FBACD3717CE51FF0085E913 /* SFActivityItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBACD3617CE51FF0085E913 /* SFActivityItemProvider.m */; };
+		3FC593F218A2D86700203BFD /* SFNotificationSettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC593F118A2D86700203BFD /* SFNotificationSettingsDataSource.m */; };
+		3FC593F518A2ECE600203BFD /* SFAnalyticsSettingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC593F418A2ECE600203BFD /* SFAnalyticsSettingsDataSource.m */; };
+		3FC667A516A0BCA5003E4341 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC667A416A0BCA5003E4341 /* CoreLocation.framework */; };
+		3FC667A716A0BCF7003E4341 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC667A616A0BCF7003E4341 /* libsqlite3.dylib */; };
+		3FD1C76E18B50ADC0033D5E2 /* SFNotificationSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1C76D18B50ADC0033D5E2 /* SFNotificationSettingsViewController.m */; };
+		3FDC568217C717970093C458 /* SFHearingsSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC568117C717970093C458 /* SFHearingsSectionViewController.m */; };
+		3FDC568517C723AD0093C458 /* SFHearingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC568417C723AD0093C458 /* SFHearingDetailViewController.m */; };
+		3FDC568817C7251D0093C458 /* SFHearingDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC568717C7251D0093C458 /* SFHearingDetailView.m */; };
+		3FDDF98A1795CED10024A6AF /* SFFullTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDF9891795CED10024A6AF /* SFFullTextViewController.m */; };
+		3FDDF99017971A700024A6AF /* SFBillIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDF98F17971A700024A6AF /* SFBillIdentifier.m */; };
+		3FDDF996179723160024A6AF /* SFBillIdentifierTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDF995179723160024A6AF /* SFBillIdentifierTransformer.m */; };
+		3FE3AEE217D7CDB900F881D9 /* SFHearingActivityItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3AEE117D7CDB900F881D9 /* SFHearingActivityItemProvider.m */; };
+		3FE3AEE517D7CE5B00F881D9 /* SFCalendarActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3AEE417D7CE5B00F881D9 /* SFCalendarActivity.m */; };
+		3FE3AEE717D7D41900F881D9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE3AEE617D7D41900F881D9 /* EventKit.framework */; };
+		3FE3AEE917D7D6A400F881D9 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE3AEE817D7D6A400F881D9 /* EventKitUI.framework */; };
+		3FE3AEEC17D81F9900F881D9 /* SFCalendarEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3AEEB17D81F9900F881D9 /* SFCalendarEventViewController.m */; };
+		3FE5F37E17564E10000D557E /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE5F37D17564E10000D557E /* AddressBookUI.framework */; };
+		3FE5F38C1756A02A000D557E /* SFPeoplePickerNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5F38B1756A02A000D557E /* SFPeoplePickerNavigationController.m */; };
+		3FEB86091799BB540033E467 /* SFCommitteeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB86081799BB540033E467 /* SFCommitteeService.m */; };
+		3FEB860C1799BCC50033E467 /* SFCommittee.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB860B1799BCC50033E467 /* SFCommittee.m */; };
+		3FECE84A16F7B5420046CA65 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F23B38C169B3D8700B3CF49 /* CoreData.framework */; };
+		3FF52DA919743E41009DD2E7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3FF52DA819743E41009DD2E7 /* Podfile */; };
+		3FF52DAB19745AD5009DD2E7 /* SFLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF52DAA19745AD5009DD2E7 /* SFLineView.m */; };
+		3FFA2C3619C8D1B900C8BCA7 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFA2C3519C8D1B900C8BCA7 /* Launch Screen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F54BCE6197EC81A00DBF5DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F0331D2175D3C2A00A1DEDD /* SFLegislatorSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorSegmentedViewController.h; sourceTree = "<group>"; };
+		2F0331D3175D3C2A00A1DEDD /* SFLegislatorSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorSegmentedViewController.m; sourceTree = "<group>"; };
+		2F0331D5175E7C8E00A1DEDD /* SFBillSponsorCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillSponsorCellTransformer.h; sourceTree = "<group>"; };
+		2F0331D6175E7C8E00A1DEDD /* SFBillSponsorCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillSponsorCellTransformer.m; sourceTree = "<group>"; };
+		2F0331D8175E7E1000A1DEDD /* SFLegislatorBillsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorBillsTableViewController.h; sourceTree = "<group>"; };
+		2F0331D9175E7E1000A1DEDD /* SFLegislatorBillsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFLegislatorBillsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F0331DB175FA1EC00A1DEDD /* SFLegislatorVotingRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorVotingRecordTableViewController.h; sourceTree = "<group>"; };
+		2F0331DC175FA1EC00A1DEDD /* SFLegislatorVotingRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFLegislatorVotingRecordTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F0331DE175FADB600A1DEDD /* SFRollCallVoteByLegislatorCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRollCallVoteByLegislatorCellTransformer.h; sourceTree = "<group>"; };
+		2F0331DF175FADB700A1DEDD /* SFRollCallVoteByLegislatorCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRollCallVoteByLegislatorCellTransformer.m; sourceTree = "<group>"; };
+		2F0417681742BD1C0087C1AB /* SFFollowHowToView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFollowHowToView.h; sourceTree = "<group>"; };
+		2F0417691742BD1C0087C1AB /* SFFollowHowToView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFollowHowToView.m; sourceTree = "<group>"; };
+		2F09B27116555D500047461E /* SFSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettings.m; sourceTree = "<group>"; };
+		2F09B27416555E6F0047461E /* SFSettingsExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSettingsExample.h; sourceTree = "<group>"; };
+		2F09B27516555E6F0047461E /* SFSettingsExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSettingsExample.m; sourceTree = "<group>"; };
+		2F09B2E816558D440047461E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2F09B2EA16558D690047461E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2F09B2EF165596C20047461E /* SFCongressApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCongressApiClient.h; sourceTree = "<group>"; };
+		2F09B2F0165596C30047461E /* SFCongressApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCongressApiClient.m; sourceTree = "<group>"; };
+		2F09B2F21655B4A80047461E /* SFLegislatorService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorService.h; sourceTree = "<group>"; };
+		2F09B2F31655B4A80047461E /* SFLegislatorService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorService.m; sourceTree = "<group>"; };
+		2F09B31D16569A410047461E /* SFHTTPClientUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHTTPClientUtils.h; sourceTree = "<group>"; };
+		2F0E388816F8AA040043B4FD /* SFCalloutBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCalloutBackgroundView.h; sourceTree = "<group>"; };
+		2F0E388916F8AA040043B4FD /* SFCalloutBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCalloutBackgroundView.m; sourceTree = "<group>"; };
+		2F0E389116F90BD80043B4FD /* NSString+Congress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Congress.h"; path = "Categories/NSString+Congress.h"; sourceTree = "<group>"; };
+		2F0E389216F90BD80043B4FD /* NSString+Congress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Congress.m"; path = "Categories/NSString+Congress.m"; sourceTree = "<group>"; };
+		2F0E38B216FB5D000043B4FD /* SFCongressNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCongressNavigationController.h; sourceTree = "<group>"; };
+		2F0E38B316FB5D010043B4FD /* SFCongressNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCongressNavigationController.m; sourceTree = "<group>"; };
+		2F0E38C216FCE42D0043B4FD /* SVPullToRefreshView+Congress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SVPullToRefreshView+Congress.h"; path = "Categories/SVPullToRefreshView+Congress.h"; sourceTree = "<group>"; };
+		2F0E38C316FCE42D0043B4FD /* SVPullToRefreshView+Congress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SVPullToRefreshView+Congress.m"; path = "Categories/SVPullToRefreshView+Congress.m"; sourceTree = "<group>"; };
+		2F0F00D7167A766700C3344F /* SFLegislatorDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorDetailView.h; sourceTree = "<group>"; };
+		2F0F00D8167A766700C3344F /* SFLegislatorDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorDetailView.m; sourceTree = "<group>"; };
+		2F0F00DA167A7D0100C3344F /* SFLegislatorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFLegislatorDetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2F0F00DB167A7D0100C3344F /* SFLegislatorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorDetailViewController.m; sourceTree = "<group>"; };
+		2F0FFFEB1677A0A100C3344F /* NSDate+Congress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Congress.h"; path = "Categories/NSDate+Congress.h"; sourceTree = "<group>"; };
+		2F0FFFEC1677A0A100C3344F /* NSDate+Congress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Congress.m"; path = "Categories/NSDate+Congress.m"; sourceTree = "<group>"; };
+		2F15C42516BC52070069D929 /* SFSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSegmentedViewController.h; sourceTree = "<group>"; };
+		2F15C42616BC52070069D929 /* SFSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSegmentedViewController.m; sourceTree = "<group>"; };
+		2F15C42E16BC52790069D929 /* SFSegmentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFSegmentedView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2F15C42F16BC52790069D929 /* SFSegmentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSegmentedView.m; sourceTree = "<group>"; };
+		2F15C43116BC784B0069D929 /* SFBillSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillSegmentedViewController.m; sourceTree = "<group>"; };
+		2F15C43216BC784B0069D929 /* SFBillSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillSegmentedViewController.h; sourceTree = "<group>"; };
+		2F15C9EE169C962E0050DCAE /* SFSynchronizedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSynchronizedObject.h; sourceTree = "<group>"; };
+		2F15C9EF169C962E0050DCAE /* SFSynchronizedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFSynchronizedObject.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F15C9F1169C96EC0050DCAE /* SFBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBill.h; sourceTree = "<group>"; };
+		2F15C9F2169C96EC0050DCAE /* SFBill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFBill.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F15C9F4169C96ED0050DCAE /* SFLegislator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislator.h; sourceTree = "<group>"; };
+		2F15C9F5169C96ED0050DCAE /* SFLegislator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFLegislator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F15CA07169CA9560050DCAE /* SFSharedInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFSharedInstance.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2F18C509171CB26600C40783 /* SFSearchBillsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSearchBillsTableViewController.h; sourceTree = "<group>"; };
+		2F18C50A171CB26600C40783 /* SFSearchBillsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFSearchBillsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F18C50C171CB3B300C40783 /* SFBillSearchCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillSearchCellTransformer.h; sourceTree = "<group>"; };
+		2F18C50D171CB3B300C40783 /* SFBillSearchCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillSearchCellTransformer.m; sourceTree = "<group>"; };
+		2F19CBAD1757F2FD00185BB2 /* UIImage+SFCongressAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFCongressAppStyle.h"; sourceTree = "<group>"; };
+		2F19CBAE1757F2FD00185BB2 /* UIImage+SFCongressAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SFCongressAppStyle.m"; sourceTree = "<group>"; };
+		2F1B05EA17033F9900A26712 /* IIViewDeckController+SFStatePreservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IIViewDeckController+SFStatePreservation.h"; path = "Categories/IIViewDeckController+SFStatePreservation.h"; sourceTree = "<group>"; };
+		2F1B05EB17033F9900A26712 /* IIViewDeckController+SFStatePreservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "IIViewDeckController+SFStatePreservation.m"; path = "Categories/IIViewDeckController+SFStatePreservation.m"; sourceTree = "<group>"; };
+		2F1D5EAF16D7CCFD00F2800D /* SFCongressURLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCongressURLService.h; sourceTree = "<group>"; };
+		2F1D5EB016D7CCFD00F2800D /* SFCongressURLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCongressURLService.m; sourceTree = "<group>"; };
+		2F1DBB83176128E900118FDF /* SFBillTypeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillTypeTransformer.h; sourceTree = "<group>"; };
+		2F1DBB84176128E900118FDF /* SFBillTypeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillTypeTransformer.m; sourceTree = "<group>"; };
+		2F1DBB8717612B7000118FDF /* SFBillIdTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillIdTransformer.h; sourceTree = "<group>"; };
+		2F1DBB8817612B7000118FDF /* SFBillIdTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillIdTransformer.m; sourceTree = "<group>"; };
+		2F23B38C169B3D8700B3CF49 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2F241642184D3F8C00337419 /* SFInformationSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFInformationSectionViewController.h; sourceTree = "<group>"; };
+		2F241643184D3F8C00337419 /* SFInformationSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFInformationSectionViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F241645184D3FCC00337419 /* SFInformationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFInformationView.h; sourceTree = "<group>"; };
+		2F241646184D3FCC00337419 /* SFInformationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFInformationView.m; sourceTree = "<group>"; };
+		2F241648184F915F00337419 /* SFSynchronizedObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSynchronizedObjectManager.h; sourceTree = "<group>"; };
+		2F241649184F915F00337419 /* SFSynchronizedObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSynchronizedObjectManager.m; sourceTree = "<group>"; };
+		2F247DBE1671389B006AD075 /* SFMainDeckTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMainDeckTableViewController.h; sourceTree = "<group>"; };
+		2F247DBF1671389B006AD075 /* SFMainDeckTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMainDeckTableViewController.m; sourceTree = "<group>"; };
+		2F26C03F167BC52F009E85C8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		2F38B6B81856206500000064 /* SFSettingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingsDataSource.h; sourceTree = "<group>"; };
+		2F38B6B91856206500000064 /* SFSettingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingsDataSource.m; sourceTree = "<group>"; };
+		2F38B6BB1856307600000064 /* SFSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingCell.h; sourceTree = "<group>"; };
+		2F38B6BC1856307600000064 /* SFSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingCell.m; sourceTree = "<group>"; };
+		2F3FA8A7166812A200A63CFF /* SFMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMenuViewController.h; sourceTree = "<group>"; };
+		2F3FA8A8166812A200A63CFF /* SFMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMenuViewController.m; sourceTree = "<group>"; };
+		2F41E8301715B391009E23F0 /* SFDefaultLegislatorCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDefaultLegislatorCellTransformer.h; sourceTree = "<group>"; };
+		2F41E8311715B391009E23F0 /* SFDefaultLegislatorCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDefaultLegislatorCellTransformer.m; sourceTree = "<group>"; };
+		2F41E8391715F964009E23F0 /* SFDefaultBillActionCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDefaultBillActionCellTransformer.h; sourceTree = "<group>"; };
+		2F41E83A1715F964009E23F0 /* SFDefaultBillActionCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDefaultBillActionCellTransformer.m; sourceTree = "<group>"; };
+		2F41E83C1716006B009E23F0 /* SFDefaultRollCallVoteCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDefaultRollCallVoteCellTransformer.h; sourceTree = "<group>"; };
+		2F41E83D1716006B009E23F0 /* SFDefaultRollCallVoteCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDefaultRollCallVoteCellTransformer.m; sourceTree = "<group>"; };
+		2F41E83F17160FEF009E23F0 /* SFLegislatorVoteCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorVoteCellTransformer.h; sourceTree = "<group>"; };
+		2F41E84017160FEF009E23F0 /* SFLegislatorVoteCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorVoteCellTransformer.m; sourceTree = "<group>"; };
+		2F42A44518BEA40700D3ED24 /* SFBillNoExtraDataCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillNoExtraDataCellTransformer.h; sourceTree = "<group>"; };
+		2F42A44618BEA40700D3ED24 /* SFBillNoExtraDataCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillNoExtraDataCellTransformer.m; sourceTree = "<group>"; };
+		2F42A44818BEA77F00D3ED24 /* SFFollowingBillsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFollowingBillsTableViewController.h; sourceTree = "<group>"; };
+		2F42A44918BEA77F00D3ED24 /* SFFollowingBillsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFollowingBillsTableViewController.m; sourceTree = "<group>"; };
+		2F4D29A516BAD9DD007BDB0E /* UIBarButtonItem+SFCongressAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SFCongressAppStyle.h"; sourceTree = "<group>"; };
+		2F4D29A616BAD9DD007BDB0E /* UIBarButtonItem+SFCongressAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIBarButtonItem+SFCongressAppStyle.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F4D29B116BB0A92007BDB0E /* SFRollCallVote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRollCallVote.h; sourceTree = "<group>"; };
+		2F4D29B216BB0A92007BDB0E /* SFRollCallVote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFRollCallVote.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F4D29B416BB0BAF007BDB0E /* SFBillAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillAction.h; sourceTree = "<group>"; };
+		2F4D29B516BB0BB0007BDB0E /* SFBillAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFBillAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F4D29B716BB22E0007BDB0E /* SFActionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFActionTableViewController.h; sourceTree = "<group>"; };
+		2F4D29B816BB22E0007BDB0E /* SFActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFActionTableViewController.m; sourceTree = "<group>"; };
+		2F58C4C6165A82140010FD45 /* SFBillService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillService.h; sourceTree = "<group>"; };
+		2F58C4C7165A82140010FD45 /* SFBillService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFBillService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F58C600165AA1C20010FD45 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2F6084AE16C0557300EED484 /* SFFollowingSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFollowingSectionViewController.h; sourceTree = "<group>"; };
+		2F6084AF16C0557400EED484 /* SFFollowingSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFollowingSectionViewController.m; sourceTree = "<group>"; };
+		2F6084B116C1A12E00EED484 /* SFBillsSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFBillsSectionView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2F6084B216C1A12E00EED484 /* SFBillsSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillsSectionView.m; sourceTree = "<group>"; };
+		2F6DBFBF166E4317007330CB /* SFBillDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFBillDetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2F6DBFC0166E4317007330CB /* SFBillDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFBillDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F6DBFF6166E5906007330CB /* SFBillDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillDetailView.h; sourceTree = "<group>"; };
+		2F6DBFF7166E5906007330CB /* SFBillDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFBillDetailView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F6DC02D166FAF0C007330CB /* SFLegislatorsSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorsSectionViewController.h; sourceTree = "<group>"; };
+		2F6DC02E166FAF0C007330CB /* SFLegislatorsSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorsSectionViewController.m; sourceTree = "<group>"; };
+		2F7766DD17C403B500E1BA08 /* UIDevice+VersionCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+VersionCheck.h"; path = "Categories/UIDevice+VersionCheck.h"; sourceTree = "<group>"; };
+		2F7766DE17C403B500E1BA08 /* UIDevice+VersionCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+VersionCheck.m"; path = "Categories/UIDevice+VersionCheck.m"; sourceTree = "<group>"; };
+		2F7766E017C50B1000E1BA08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		2F7C09EF1843A33B00B28B82 /* SFDataTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataTableDataSource.h; sourceTree = "<group>"; };
+		2F7C09F01843A33B00B28B82 /* SFDataTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDataTableDataSource.m; sourceTree = "<group>"; };
+		2F7C77CA16A497B40084DAF1 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		2F834E67165541EC006238AB /* Congress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Congress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F834E6B165541EC006238AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F834E6D165541EC006238AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F834E6F165541EC006238AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2F834E90165545C5006238AB /* SFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		2F834E91165545C5006238AB /* SFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		2F834E95165545D4006238AB /* Congress-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Congress-Prefix.pch"; sourceTree = "<group>"; };
+		2F834E96165545D4006238AB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F834E98165545D4006238AB /* Congress-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Congress-Info.plist"; sourceTree = "<group>"; };
+		2F834E9A165545D4006238AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F834EB7165553EA006238AB /* SFSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSettings.h; sourceTree = "<group>"; };
+		2F85741916E541B50073EFA0 /* SFOpticView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOpticView.h; sourceTree = "<group>"; };
+		2F85741A16E541B50073EFA0 /* SFOpticView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOpticView.m; sourceTree = "<group>"; };
+		2F85741C16E652810073EFA0 /* SFFollowing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFFollowing.h; path = Classes/Misc/SFFollowing.h; sourceTree = SOURCE_ROOT; };
+		2F8C044716A48D41005E52F6 /* Beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Beta.xcconfig; sourceTree = "<group>"; };
+		2F8C044816A48D83005E52F6 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		2F8E294516EE2999006F54E1 /* SFCongressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCongressButton.h; sourceTree = "<group>"; };
+		2F8E294616EE2999006F54E1 /* SFCongressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCongressButton.m; sourceTree = "<group>"; };
+		2F8E295216EE77C0006F54E1 /* SFSettingsSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingsSectionViewController.h; sourceTree = "<group>"; };
+		2F8E295316EE77C0006F54E1 /* SFSettingsSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingsSectionViewController.m; sourceTree = "<group>"; };
+		2F98E1071836BC870012BC6E /* SFPushConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFPushConfig.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2F98E1081836BC870012BC6E /* SFPushConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFPushConfig.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2F9B88C3183BC376009504C9 /* SFTagManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTagManager.h; sourceTree = "<group>"; };
+		2F9B88C4183BC376009504C9 /* SFTagManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTagManager.m; sourceTree = "<group>"; };
+		2F9F7AF216DBCB5600DE8AF1 /* UIView+ViewGeometryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ViewGeometryAdditions.h"; path = "Categories/UIView+ViewGeometryAdditions.h"; sourceTree = "<group>"; };
+		2F9F7AF316DBCB5600DE8AF1 /* UIView+ViewGeometryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ViewGeometryAdditions.m"; path = "Categories/UIView+ViewGeometryAdditions.m"; sourceTree = "<group>"; };
+		2F9F7AF816DD65D900DE8AF1 /* SFDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataTableViewController.h; sourceTree = "<group>"; };
+		2F9F7AF916DD65D900DE8AF1 /* SFDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDataTableViewController.m; sourceTree = "<group>"; };
+		2FA11C121714684400C12583 /* SFCellDataTransformers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCellDataTransformers.h; sourceTree = "<group>"; };
+		2FA11C131714684400C12583 /* SFCellDataTransformers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCellDataTransformers.m; sourceTree = "<group>"; };
+		2FA11C1517146A5700C12583 /* SFDefaultBillCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDefaultBillCellTransformer.h; sourceTree = "<group>"; };
+		2FA11C1617146A5700C12583 /* SFDefaultBillCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDefaultBillCellTransformer.m; sourceTree = "<group>"; };
+		2FA11C1817146B1300C12583 /* SFCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCellData.h; sourceTree = "<group>"; };
+		2FA11C1917146B1400C12583 /* SFCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCellData.m; sourceTree = "<group>"; };
+		2FA4865D16D52CBA0058FD24 /* SFMixedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMixedTableViewController.h; sourceTree = "<group>"; };
+		2FA4865E16D52CBA0058FD24 /* SFMixedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFMixedTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2FA90436172AC1760077AB49 /* SFSettingsSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSettingsSectionView.h; sourceTree = "<group>"; };
+		2FA90437172AC1760077AB49 /* SFSettingsSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSettingsSectionView.m; sourceTree = "<group>"; };
+		2FAC77801843C12900020B3A /* SFLegislatorTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorTableDataSource.h; sourceTree = "<group>"; };
+		2FAC77811843C12900020B3A /* SFLegislatorTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorTableDataSource.m; sourceTree = "<group>"; };
+		2FAC77831843F42100020B3A /* SFMixedTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMixedTableDataSource.h; sourceTree = "<group>"; };
+		2FAC77841843F42100020B3A /* SFMixedTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMixedTableDataSource.m; sourceTree = "<group>"; };
+		2FAC77861843F7D800020B3A /* SFActionTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFActionTableDataSource.h; sourceTree = "<group>"; };
+		2FAC77871843F7D800020B3A /* SFActionTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFActionTableDataSource.m; sourceTree = "<group>"; };
+		2FAC77891843FA6900020B3A /* SFBillTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillTableDataSource.h; sourceTree = "<group>"; };
+		2FAC778A1843FA6900020B3A /* SFBillTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillTableDataSource.m; sourceTree = "<group>"; };
+		2FAC778C1843FDFB00020B3A /* SFBillSearchTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillSearchTableDataSource.h; sourceTree = "<group>"; };
+		2FAC778D1843FDFB00020B3A /* SFBillSearchTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillSearchTableDataSource.m; sourceTree = "<group>"; };
+		2FAC778F184418B700020B3A /* SFLegislatorVoteTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorVoteTableDataSource.h; sourceTree = "<group>"; };
+		2FAC7790184418B700020B3A /* SFLegislatorVoteTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorVoteTableDataSource.m; sourceTree = "<group>"; };
+		2FAC77951844F10C00020B3A /* SFValue1TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFValue1TableCell.h; sourceTree = "<group>"; };
+		2FAC77961844F10C00020B3A /* SFValue1TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFValue1TableCell.m; sourceTree = "<group>"; };
+		2FAC77981844F77D00020B3A /* SFVoteCountTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFVoteCountTableDataSource.h; sourceTree = "<group>"; };
+		2FAC77991844F77D00020B3A /* SFVoteCountTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFVoteCountTableDataSource.m; sourceTree = "<group>"; };
+		2FAC779B1845180200020B3A /* SFHearingsTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHearingsTableDataSource.h; sourceTree = "<group>"; };
+		2FAC779C1845180200020B3A /* SFHearingsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHearingsTableDataSource.m; sourceTree = "<group>"; };
+		2FAC779E18452AB600020B3A /* SFCommitteeHearingsTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeHearingsTableDataSource.h; sourceTree = "<group>"; };
+		2FAC779F18452AB600020B3A /* SFCommitteeHearingsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteeHearingsTableDataSource.m; sourceTree = "<group>"; };
+		2FAC77A118452E5700020B3A /* SFCommitteesTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteesTableDataSource.h; sourceTree = "<group>"; };
+		2FAC77A218452E5700020B3A /* SFCommitteesTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteesTableDataSource.m; sourceTree = "<group>"; };
+		2FAC77A418452F0100020B3A /* SFCommitteeMembersTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeMembersTableDataSource.h; sourceTree = "<group>"; };
+		2FAC77A518452F0100020B3A /* SFCommitteeMembersTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteeMembersTableDataSource.m; sourceTree = "<group>"; };
+		2FAC77A71845314000020B3A /* SFLegislatorBillsTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorBillsTableDataSource.h; sourceTree = "<group>"; };
+		2FAC77A81845314000020B3A /* SFLegislatorBillsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorBillsTableDataSource.m; sourceTree = "<group>"; };
+		2FAC77AA184536C700020B3A /* SFLegislatorVotingRecordDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorVotingRecordDataSource.h; sourceTree = "<group>"; };
+		2FAC77AB184536C700020B3A /* SFLegislatorVotingRecordDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLegislatorVotingRecordDataSource.m; sourceTree = "<group>"; };
+		2FAC77B418468E3900020B3A /* SFEditFollowedItemsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFEditFollowedItemsDataSource.h; sourceTree = "<group>"; };
+		2FAC77B518468E3900020B3A /* SFEditFollowedItemsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFEditFollowedItemsDataSource.m; sourceTree = "<group>"; };
+		2FB6176917171B2D0037A5E5 /* SFLegislatorVoteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorVoteTableViewController.h; sourceTree = "<group>"; };
+		2FB6176A17171B2D0037A5E5 /* SFLegislatorVoteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFLegislatorVoteTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2FB61772171743440037A5E5 /* SFBasicTextCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBasicTextCellTransformer.h; sourceTree = "<group>"; };
+		2FB61773171743440037A5E5 /* SFBasicTextCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBasicTextCellTransformer.m; sourceTree = "<group>"; };
+		2FB6177F1718B0AF0037A5E5 /* SFTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableHeaderView.h; sourceTree = "<group>"; };
+		2FB617801718B0AF0037A5E5 /* SFTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableHeaderView.m; sourceTree = "<group>"; };
+		2FBAC22316B88C51009198ED /* SFLegislatorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLegislatorTableViewController.h; sourceTree = "<group>"; };
+		2FBAC22416B88C51009198ED /* SFLegislatorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFLegislatorTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2FC88383170CCA9A00CD9E57 /* NSURL+Congress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+Congress.h"; path = "Categories/NSURL+Congress.h"; sourceTree = "<group>"; };
+		2FC88384170CCA9A00CD9E57 /* NSURL+Congress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Congress.m"; path = "Categories/NSURL+Congress.m"; sourceTree = "<group>"; };
+		2FC88389170E0ECC00CD9E57 /* SFMapToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMapToggleButton.h; sourceTree = "<group>"; };
+		2FC8838A170E0ECC00CD9E57 /* SFMapToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMapToggleButton.m; sourceTree = "<group>"; };
+		2FCE888016F10A1D00DDB3AF /* SFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLabel.h; sourceTree = "<group>"; };
+		2FCE888116F10A1D00DDB3AF /* SFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLabel.m; sourceTree = "<group>"; };
+		2FCE888316F2561C00DDB3AF /* SFFollowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFollowButton.h; sourceTree = "<group>"; };
+		2FCE888416F2561D00DDB3AF /* SFFollowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFollowButton.m; sourceTree = "<group>"; };
+		2FD1544416C4390100B5EF3D /* SFRollCallVoteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFRollCallVoteService.h; sourceTree = "<group>"; };
+		2FD1544516C4390100B5EF3D /* SFRollCallVoteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFRollCallVoteService.m; sourceTree = "<group>"; };
+		2FD1544D16C451E900B5EF3D /* SFVoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFVoteDetailViewController.h; sourceTree = "<group>"; };
+		2FD1544E16C451E900B5EF3D /* SFVoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFVoteDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2FD1545016C4522600B5EF3D /* SFVoteDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFVoteDetailView.h; sourceTree = "<group>"; };
+		2FD1545116C4522600B5EF3D /* SFVoteDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFVoteDetailView.m; sourceTree = "<group>"; };
+		2FD1E6A7166913FA005B3C97 /* SFNavTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNavTableCell.h; sourceTree = "<group>"; };
+		2FD1E6A8166913FA005B3C97 /* SFNavTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNavTableCell.m; sourceTree = "<group>"; };
+		2FD754EE170A1F4F009C48D8 /* SFImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFImageButton.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2FD754EF170A1F50009C48D8 /* SFImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFImageButton.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2FD754F2170A2624009C48D8 /* NSMutableAttributedString+Congress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+Congress.h"; path = "Categories/NSMutableAttributedString+Congress.h"; sourceTree = "<group>"; };
+		2FD754F3170A2624009C48D8 /* NSMutableAttributedString+Congress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+Congress.m"; path = "Categories/NSMutableAttributedString+Congress.m"; sourceTree = "<group>"; };
+		2FDAC559171F389C0067F0D8 /* SFDateFormatterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDateFormatterUtil.h; sourceTree = "<group>"; };
+		2FDAC55A171F389C0067F0D8 /* SFDateFormatterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDateFormatterUtil.m; sourceTree = "<group>"; };
+		2FEA7B9F16694BBD008C5E79 /* SFActivitySectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFActivitySectionViewController.h; sourceTree = "<group>"; };
+		2FEA7BA016694BBD008C5E79 /* SFActivitySectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFActivitySectionViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2FEA8D9F16AF27E60022B860 /* SFShareableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFShareableViewController.h; sourceTree = "<group>"; };
+		2FEA8DA016AF27E60022B860 /* SFShareableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFShareableViewController.m; sourceTree = "<group>"; };
+		2FEA8DF716B07BCE0022B860 /* SFBillsSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillsSectionViewController.m; sourceTree = "<group>"; };
+		2FEA8DF816B07BCE0022B860 /* SFBillsSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillsSectionViewController.h; sourceTree = "<group>"; };
+		2FED56D816E7E2EB00F0E9A5 /* SFCongressAppStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFCongressAppStyle.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2FED56D916E7E2EB00F0E9A5 /* SFCongressAppStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFCongressAppStyle.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2FED56E716E8F11400F0E9A5 /* SFCongressTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCongressTableViewController.h; sourceTree = "<group>"; };
+		2FED56E816E8F11400F0E9A5 /* SFCongressTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCongressTableViewController.m; sourceTree = "<group>"; };
+		2FED56FC16E94ED700F0E9A5 /* SFTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTableCell.h; sourceTree = "<group>"; };
+		2FED56FD16E94ED800F0E9A5 /* SFTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTableCell.m; sourceTree = "<group>"; };
+		2FF29E4E1655583600FAB0E3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2FF4F7AC16CED13500F9AFD9 /* SFBillsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillsTableViewController.h; sourceTree = "<group>"; };
+		2FF4F7AD16CED13500F9AFD9 /* SFBillsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillsTableViewController.m; sourceTree = "<group>"; };
+		2FF728EA16A99A65007488BB /* SFDataArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataArchiver.h; sourceTree = "<group>"; };
+		2FF728EB16A99A65007488BB /* SFDataArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDataArchiver.m; sourceTree = "<group>"; };
+		3F061910174D7A9400D595D4 /* SFDistrictMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDistrictMapViewController.m; sourceTree = "<group>"; };
+		3F27C71B179A487E000DC68F /* SFDefaultCommitteeCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDefaultCommitteeCellTransformer.h; sourceTree = "<group>"; };
+		3F27C71C179A487E000DC68F /* SFDefaultCommitteeCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDefaultCommitteeCellTransformer.m; sourceTree = "<group>"; };
+		3F2CDD811757A58D00BD8BCF /* SFMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMessage.h; sourceTree = "<group>"; };
+		3F2CDD821757A58D00BD8BCF /* SFMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMessage.m; sourceTree = "<group>"; };
+		3F2E1E7517C280C3001CADD1 /* SFCommitteeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeDetailViewController.h; sourceTree = "<group>"; };
+		3F2E1E7617C280C3001CADD1 /* SFCommitteeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteeDetailViewController.m; sourceTree = "<group>"; };
+		3F2E1E7717C280C3001CADD1 /* SFCommitteeMembersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeMembersTableViewController.h; sourceTree = "<group>"; };
+		3F2E1E7817C280C3001CADD1 /* SFCommitteeMembersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFCommitteeMembersTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3F2E1E7917C280C3001CADD1 /* SFCommitteeSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeSegmentedViewController.h; sourceTree = "<group>"; };
+		3F2E1E7A17C280C3001CADD1 /* SFCommitteeSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteeSegmentedViewController.m; sourceTree = "<group>"; };
+		3F2E1E7B17C280C3001CADD1 /* SFCommitteesSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteesSectionViewController.h; sourceTree = "<group>"; };
+		3F2E1E7C17C280C3001CADD1 /* SFCommitteesSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteesSectionViewController.m; sourceTree = "<group>"; };
+		3F2E1E7D17C280C3001CADD1 /* SFCommitteesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteesTableViewController.h; sourceTree = "<group>"; };
+		3F2E1E7E17C280C3001CADD1 /* SFCommitteesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFCommitteesTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3F321CEE1811E1AE0079149F /* SFContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFContentView.h; path = Classes/Views/SFContentView.h; sourceTree = SOURCE_ROOT; };
+		3F321CEF1811E1AE0079149F /* SFContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFContentView.m; path = Classes/Views/SFContentView.m; sourceTree = SOURCE_ROOT; };
+		3F36A3E316EE5AB600C61535 /* SFMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFMapView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3F36A3E416EE5AB600C61535 /* SFMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMapView.m; sourceTree = "<group>"; };
+		3F373CF7181228BC007F68C0 /* NSLayoutConstraint+Congress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+Congress.h"; path = "Categories/NSLayoutConstraint+Congress.h"; sourceTree = "<group>"; };
+		3F373CF8181228BC007F68C0 /* NSLayoutConstraint+Congress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+Congress.m"; path = "Categories/NSLayoutConstraint+Congress.m"; sourceTree = "<group>"; };
+		3F44A3E817301D7A00F2B3CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3F44A3EA17301F3100F2B3CA /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3F4B145019B8C48000F34D5B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3F4B145219BA5CCF00F34D5B /* SFDebugSettingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDebugSettingsDataSource.h; sourceTree = "<group>"; };
+		3F4B145319BA5CCF00F34D5B /* SFDebugSettingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDebugSettingsDataSource.m; sourceTree = "<group>"; };
+		3F4B145519BA5E9700F34D5B /* SFDebugSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDebugSettingsViewController.h; sourceTree = "<group>"; };
+		3F4B145619BA5E9700F34D5B /* SFDebugSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDebugSettingsViewController.m; sourceTree = "<group>"; };
+		3F54BCC9197EC81A00DBF5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F54BCCA197EC81A00DBF5DF /* CongressKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CongressKit.h; sourceTree = "<group>"; };
+		3F54BCD6197EC81A00DBF5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F54BCD7197EC81A00DBF5DF /* CongressKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressKitTests.swift; sourceTree = "<group>"; };
+		3F54BCEA197EC83C00DBF5DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3F54BCEC197EC9C100DBF5DF /* Congress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Congress-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F54BCED197EC9C200DBF5DF /* LegislatorDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorDetailView.swift; sourceTree = "<group>"; };
+		3F54BCEF197EE2B000DBF5DF /* LegislatorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegislatorDetailViewController.swift; sourceTree = "<group>"; };
+		3F54BCF1197EE5B000DBF5DF /* IBAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IBAssets.xcassets; sourceTree = "<group>"; };
+		3F693A8F17654DFD0035AFF4 /* SFViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFViewDeckController.h; sourceTree = "<group>"; };
+		3F693A9017654DFD0035AFF4 /* SFViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFViewDeckController.m; sourceTree = "<group>"; };
+		3F73A6F617552B810088BE6A /* SFLocalLegislatorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLocalLegislatorsViewController.h; sourceTree = "<group>"; };
+		3F73A6F717552B810088BE6A /* SFLocalLegislatorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLocalLegislatorsViewController.m; sourceTree = "<group>"; };
+		3F79268416F10E0F00C10CC2 /* SFBoundaryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFBoundaryService.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3F79268516F10E0F00C10CC2 /* SFBoundaryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBoundaryService.m; sourceTree = "<group>"; };
+		3F83884B17BC257D002F1B01 /* SFCommitteeDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeDetailView.h; sourceTree = "<group>"; };
+		3F83884C17BC257D002F1B01 /* SFCommitteeDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteeDetailView.m; sourceTree = "<group>"; };
+		3F86F1C119B0F51200BC3FBC /* SFOCEmailConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOCEmailConfirmationViewController.h; sourceTree = "<group>"; };
+		3F86F1C219B0F51200BC3FBC /* SFOCEmailConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOCEmailConfirmationViewController.m; sourceTree = "<group>"; };
+		3F95BCF416F90D6D009C879D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3FA1BEA617CD50CA00F47DF5 /* SFActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFActivity.h; sourceTree = "<group>"; };
+		3FA1BEA717CD50CA00F47DF5 /* SFActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFActivity.m; sourceTree = "<group>"; };
+		3FA1BEA817CD50CA00F47DF5 /* SFCongressGovActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCongressGovActivity.h; sourceTree = "<group>"; };
+		3FA1BEA917CD50CA00F47DF5 /* SFCongressGovActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCongressGovActivity.m; sourceTree = "<group>"; };
+		3FA1BEAA17CD50CA00F47DF5 /* SFFacebookActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFacebookActivity.h; sourceTree = "<group>"; };
+		3FA1BEAB17CD50CA00F47DF5 /* SFFacebookActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFacebookActivity.m; sourceTree = "<group>"; };
+		3FA1BEAC17CD50CA00F47DF5 /* SFGovTrackActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFGovTrackActivity.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FA1BEAD17CD50CA00F47DF5 /* SFGovTrackActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFGovTrackActivity.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FA1BEAE17CD50CA00F47DF5 /* SFOpenCongressActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFOpenCongressActivity.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FA1BEAF17CD50CA00F47DF5 /* SFOpenCongressActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFOpenCongressActivity.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FA1BEB017CD50CA00F47DF5 /* SFSafariActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFSafariActivity.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FA1BEB117CD50CA00F47DF5 /* SFSafariActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFSafariActivity.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FA2ED7817A850D900DCC8F0 /* SFCommitteeMemberCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeMemberCellTransformer.h; sourceTree = "<group>"; };
+		3FA2ED7917A850D900DCC8F0 /* SFCommitteeMemberCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteeMemberCellTransformer.m; sourceTree = "<group>"; };
+		3FA2ED7C17A8681B00DCC8F0 /* SFHearing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHearing.h; sourceTree = "<group>"; };
+		3FA2ED7D17A8681B00DCC8F0 /* SFHearing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFHearing.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FA2ED7F17A86E7800DCC8F0 /* SFHearingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHearingService.h; sourceTree = "<group>"; };
+		3FA2ED8017A86E7800DCC8F0 /* SFHearingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHearingService.m; sourceTree = "<group>"; };
+		3FA7BFDE17DF9DA200070ECF /* messagestyles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messagestyles.json; sourceTree = "<group>"; };
+		3FAE67181758ECE200F1EEE8 /* SFAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAppSettings.h; sourceTree = "<group>"; };
+		3FAE67191758ECE200F1EEE8 /* SFAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAppSettings.m; sourceTree = "<group>"; };
+		3FB2E88B1804612D00E57473 /* SFBillActivityItemSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFBillActivityItemSource.h; path = Classes/Sharing/SFBillActivityItemSource.h; sourceTree = SOURCE_ROOT; };
+		3FB2E88C1804612D00E57473 /* SFBillActivityItemSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFBillActivityItemSource.m; path = Classes/Sharing/SFBillActivityItemSource.m; sourceTree = SOURCE_ROOT; };
+		3FB2E88E18046AD800E57473 /* SFTextActivityItemSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFTextActivityItemSource.h; path = Classes/Sharing/SFTextActivityItemSource.h; sourceTree = SOURCE_ROOT; };
+		3FB2E88F18046AD800E57473 /* SFTextActivityItemSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFTextActivityItemSource.m; path = Classes/Sharing/SFTextActivityItemSource.m; sourceTree = SOURCE_ROOT; };
+		3FB2E8911804713000E57473 /* SFLegislatorActivityItemSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFLegislatorActivityItemSource.h; path = Classes/Sharing/SFLegislatorActivityItemSource.h; sourceTree = SOURCE_ROOT; };
+		3FB2E8921804713000E57473 /* SFLegislatorActivityItemSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFLegislatorActivityItemSource.m; path = Classes/Sharing/SFLegislatorActivityItemSource.m; sourceTree = SOURCE_ROOT; };
+		3FB2E894180474B200E57473 /* SFCommitteeActivityItemSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCommitteeActivityItemSource.h; path = Classes/Sharing/SFCommitteeActivityItemSource.h; sourceTree = SOURCE_ROOT; };
+		3FB2E895180474B200E57473 /* SFCommitteeActivityItemSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCommitteeActivityItemSource.m; path = Classes/Sharing/SFCommitteeActivityItemSource.m; sourceTree = SOURCE_ROOT; };
+		3FB2E89718048B2A00E57473 /* SFCommitteeHearingCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeHearingCellTransformer.h; sourceTree = "<group>"; };
+		3FB2E89818048B2A00E57473 /* SFCommitteeHearingCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteeHearingCellTransformer.m; sourceTree = "<group>"; };
+		3FB2E89A18048D1E00E57473 /* SFCommitteeHearingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeHearingsTableViewController.h; sourceTree = "<group>"; };
+		3FB2E89B18048D1E00E57473 /* SFCommitteeHearingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFCommitteeHearingsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FB4304717A8A55A00956FD6 /* SFDefaultHearingCellTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDefaultHearingCellTransformer.h; sourceTree = "<group>"; };
+		3FB4304817A8A55A00956FD6 /* SFDefaultHearingCellTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDefaultHearingCellTransformer.m; sourceTree = "<group>"; };
+		3FB4304A17A8A80E00956FD6 /* SFHearingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHearingsTableViewController.h; sourceTree = "<group>"; };
+		3FB4304B17A8A80E00956FD6 /* SFHearingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFHearingsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FBACD3517CE51FF0085E913 /* SFActivityItemProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFActivityItemProvider.h; path = Classes/Sharing/SFActivityItemProvider.h; sourceTree = SOURCE_ROOT; };
+		3FBACD3617CE51FF0085E913 /* SFActivityItemProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFActivityItemProvider.m; path = Classes/Sharing/SFActivityItemProvider.m; sourceTree = SOURCE_ROOT; };
+		3FC593F018A2D86700203BFD /* SFNotificationSettingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNotificationSettingsDataSource.h; sourceTree = "<group>"; };
+		3FC593F118A2D86700203BFD /* SFNotificationSettingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNotificationSettingsDataSource.m; sourceTree = "<group>"; };
+		3FC593F318A2ECE600203BFD /* SFAnalyticsSettingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAnalyticsSettingsDataSource.h; sourceTree = "<group>"; };
+		3FC593F418A2ECE600203BFD /* SFAnalyticsSettingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAnalyticsSettingsDataSource.m; sourceTree = "<group>"; };
+		3FC667A416A0BCA5003E4341 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3FC667A616A0BCF7003E4341 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3FC667A816A0C130003E4341 /* SFDistrictMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SFDistrictMapViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3FD1C76C18B50ADC0033D5E2 /* SFNotificationSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFNotificationSettingsViewController.h; sourceTree = "<group>"; };
+		3FD1C76D18B50ADC0033D5E2 /* SFNotificationSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFNotificationSettingsViewController.m; sourceTree = "<group>"; };
+		3FDC568017C717970093C458 /* SFHearingsSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHearingsSectionViewController.h; sourceTree = "<group>"; };
+		3FDC568117C717970093C458 /* SFHearingsSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHearingsSectionViewController.m; sourceTree = "<group>"; };
+		3FDC568317C723AD0093C458 /* SFHearingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHearingDetailViewController.h; sourceTree = "<group>"; };
+		3FDC568417C723AD0093C458 /* SFHearingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHearingDetailViewController.m; sourceTree = "<group>"; };
+		3FDC568617C7251D0093C458 /* SFHearingDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHearingDetailView.h; sourceTree = "<group>"; };
+		3FDC568717C7251D0093C458 /* SFHearingDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHearingDetailView.m; sourceTree = "<group>"; };
+		3FDDF9881795CED10024A6AF /* SFFullTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFullTextViewController.h; sourceTree = "<group>"; };
+		3FDDF9891795CED10024A6AF /* SFFullTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFullTextViewController.m; sourceTree = "<group>"; };
+		3FDDF98E17971A700024A6AF /* SFBillIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillIdentifier.h; sourceTree = "<group>"; };
+		3FDDF98F17971A700024A6AF /* SFBillIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillIdentifier.m; sourceTree = "<group>"; };
+		3FDDF994179723160024A6AF /* SFBillIdentifierTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBillIdentifierTransformer.h; sourceTree = "<group>"; };
+		3FDDF995179723160024A6AF /* SFBillIdentifierTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBillIdentifierTransformer.m; sourceTree = "<group>"; };
+		3FE3AEE017D7CDB900F881D9 /* SFHearingActivityItemProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFHearingActivityItemProvider.h; path = Classes/Sharing/SFHearingActivityItemProvider.h; sourceTree = SOURCE_ROOT; };
+		3FE3AEE117D7CDB900F881D9 /* SFHearingActivityItemProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFHearingActivityItemProvider.m; path = Classes/Sharing/SFHearingActivityItemProvider.m; sourceTree = SOURCE_ROOT; };
+		3FE3AEE317D7CE5B00F881D9 /* SFCalendarActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCalendarActivity.h; sourceTree = "<group>"; };
+		3FE3AEE417D7CE5B00F881D9 /* SFCalendarActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCalendarActivity.m; sourceTree = "<group>"; };
+		3FE3AEE617D7D41900F881D9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		3FE3AEE817D7D6A400F881D9 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		3FE3AEEA17D81F9900F881D9 /* SFCalendarEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCalendarEventViewController.h; sourceTree = "<group>"; };
+		3FE3AEEB17D81F9900F881D9 /* SFCalendarEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCalendarEventViewController.m; sourceTree = "<group>"; };
+		3FE5F37D17564E10000D557E /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		3FE5F38A1756A02A000D557E /* SFPeoplePickerNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPeoplePickerNavigationController.h; sourceTree = "<group>"; };
+		3FE5F38B1756A02A000D557E /* SFPeoplePickerNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPeoplePickerNavigationController.m; sourceTree = "<group>"; };
+		3FEB86071799BB540033E467 /* SFCommitteeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommitteeService.h; sourceTree = "<group>"; };
+		3FEB86081799BB540033E467 /* SFCommitteeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCommitteeService.m; sourceTree = "<group>"; };
+		3FEB860A1799BCC50033E467 /* SFCommittee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCommittee.h; sourceTree = "<group>"; };
+		3FEB860B1799BCC50033E467 /* SFCommittee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SFCommittee.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3FF52DA819743E41009DD2E7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3FF52DAA19745AD5009DD2E7 /* SFLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLineView.m; sourceTree = "<group>"; };
+		3FF52DAC19745AEB009DD2E7 /* SFLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFLineView.h; sourceTree = "<group>"; };
+		3FFA2C3519C8D1B900C8BCA7 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		736A965F3A20876DF0F3AE8A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8C7F9BE738322BBC5A2E2FEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B4D09AD6465D4F6BD724DBEC /* Pods.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.beta.xcconfig; path = "Pods/Target Support Files/Pods/Pods.beta.xcconfig"; sourceTree = "<group>"; };
+		C05D06F169134ED1B1E4B5C4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F834E64165541EC006238AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4B145119B8C48000F34D5B /* MessageUI.framework in Frameworks */,
+				3FE3AEE917D7D6A400F881D9 /* EventKitUI.framework in Frameworks */,
+				3FE3AEE717D7D41900F881D9 /* EventKit.framework in Frameworks */,
+				3FE5F37E17564E10000D557E /* AddressBookUI.framework in Frameworks */,
+				3FC667A516A0BCA5003E4341 /* CoreLocation.framework in Frameworks */,
+				3F44A3EB17301F3100F2B3CA /* AddressBook.framework in Frameworks */,
+				3F44A3E917301D7A00F2B3CA /* MapKit.framework in Frameworks */,
+				3FECE84A16F7B5420046CA65 /* CoreData.framework in Frameworks */,
+				2F834E70165541EC006238AB /* CoreGraphics.framework in Frameworks */,
+				2F26C040167BC52F009E85C8 /* Crashlytics.framework in Frameworks */,
+				2F834E6E165541EC006238AB /* Foundation.framework in Frameworks */,
+				2F09B2E916558D440047461E /* MobileCoreServices.framework in Frameworks */,
+				2F58C602165AA1DC0010FD45 /* QuartzCore.framework in Frameworks */,
+				2F09B2EB16558D690047461E /* SystemConfiguration.framework in Frameworks */,
+				2F834E6C165541EC006238AB /* UIKit.framework in Frameworks */,
+				3FC667A716A0BCF7003E4341 /* libsqlite3.dylib in Frameworks */,
+				2FF29E4F1655583600FAB0E3 /* libz.dylib in Frameworks */,
+				187A11491F3A454F8BBC7874 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F09B31E16569C1B0047461E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F15C9F1169C96EC0050DCAE /* SFBill.h */,
+				2F15C9F2169C96EC0050DCAE /* SFBill.m */,
+				2F4D29B416BB0BAF007BDB0E /* SFBillAction.h */,
+				2F4D29B516BB0BB0007BDB0E /* SFBillAction.m */,
+				2F15C9F4169C96ED0050DCAE /* SFLegislator.h */,
+				2F15C9F5169C96ED0050DCAE /* SFLegislator.m */,
+				2F15C9EE169C962E0050DCAE /* SFSynchronizedObject.h */,
+				2F15C9EF169C962E0050DCAE /* SFSynchronizedObject.m */,
+				2F4D29B116BB0A92007BDB0E /* SFRollCallVote.h */,
+				2F4D29B216BB0A92007BDB0E /* SFRollCallVote.m */,
+				2FA11C1817146B1300C12583 /* SFCellData.h */,
+				2FA11C1917146B1400C12583 /* SFCellData.m */,
+				3FEB860A1799BCC50033E467 /* SFCommittee.h */,
+				3FEB860B1799BCC50033E467 /* SFCommittee.m */,
+				3FDDF98E17971A700024A6AF /* SFBillIdentifier.h */,
+				3FDDF98F17971A700024A6AF /* SFBillIdentifier.m */,
+				3FA2ED7C17A8681B00DCC8F0 /* SFHearing.h */,
+				3FA2ED7D17A8681B00DCC8F0 /* SFHearing.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F0E38C516FCEA970043B4FD /* Settings/Info */ = {
+			isa = PBXGroup;
+			children = (
+				2F8E295216EE77C0006F54E1 /* SFSettingsSectionViewController.h */,
+				2F8E295316EE77C0006F54E1 /* SFSettingsSectionViewController.m */,
+				2F241642184D3F8C00337419 /* SFInformationSectionViewController.h */,
+				2F241643184D3F8C00337419 /* SFInformationSectionViewController.m */,
+				2F38B6B81856206500000064 /* SFSettingsDataSource.h */,
+				2F38B6B91856206500000064 /* SFSettingsDataSource.m */,
+				3FC593F018A2D86700203BFD /* SFNotificationSettingsDataSource.h */,
+				3FC593F118A2D86700203BFD /* SFNotificationSettingsDataSource.m */,
+				3FC593F318A2ECE600203BFD /* SFAnalyticsSettingsDataSource.h */,
+				3FC593F418A2ECE600203BFD /* SFAnalyticsSettingsDataSource.m */,
+				3FD1C76C18B50ADC0033D5E2 /* SFNotificationSettingsViewController.h */,
+				3FD1C76D18B50ADC0033D5E2 /* SFNotificationSettingsViewController.m */,
+				3F86F1C119B0F51200BC3FBC /* SFOCEmailConfirmationViewController.h */,
+				3F86F1C219B0F51200BC3FBC /* SFOCEmailConfirmationViewController.m */,
+				3F4B145219BA5CCF00F34D5B /* SFDebugSettingsDataSource.h */,
+				3F4B145319BA5CCF00F34D5B /* SFDebugSettingsDataSource.m */,
+				3F4B145519BA5E9700F34D5B /* SFDebugSettingsViewController.h */,
+				3F4B145619BA5E9700F34D5B /* SFDebugSettingsViewController.m */,
+			);
+			name = Settings/Info;
+			sourceTree = "<group>";
+		};
+		2F0FFFD11677A00800C3344F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2F0FFFEB1677A0A100C3344F /* NSDate+Congress.h */,
+				2F0FFFEC1677A0A100C3344F /* NSDate+Congress.m */,
+				2F9F7AF216DBCB5600DE8AF1 /* UIView+ViewGeometryAdditions.h */,
+				2F9F7AF316DBCB5600DE8AF1 /* UIView+ViewGeometryAdditions.m */,
+				2F0E389116F90BD80043B4FD /* NSString+Congress.h */,
+				2F0E389216F90BD80043B4FD /* NSString+Congress.m */,
+				2F0E38C216FCE42D0043B4FD /* SVPullToRefreshView+Congress.h */,
+				2F0E38C316FCE42D0043B4FD /* SVPullToRefreshView+Congress.m */,
+				2F1B05EA17033F9900A26712 /* IIViewDeckController+SFStatePreservation.h */,
+				2F1B05EB17033F9900A26712 /* IIViewDeckController+SFStatePreservation.m */,
+				2FD754F2170A2624009C48D8 /* NSMutableAttributedString+Congress.h */,
+				2FD754F3170A2624009C48D8 /* NSMutableAttributedString+Congress.m */,
+				2FC88383170CCA9A00CD9E57 /* NSURL+Congress.h */,
+				2FC88384170CCA9A00CD9E57 /* NSURL+Congress.m */,
+				2F7766DD17C403B500E1BA08 /* UIDevice+VersionCheck.h */,
+				2F7766DE17C403B500E1BA08 /* UIDevice+VersionCheck.m */,
+				3F373CF7181228BC007F68C0 /* NSLayoutConstraint+Congress.h */,
+				3F373CF8181228BC007F68C0 /* NSLayoutConstraint+Congress.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		2F15CA24169CAC940050DCAE /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2F85741C16E652810073EFA0 /* SFFollowing.h */,
+				2F15CA07169CA9560050DCAE /* SFSharedInstance.h */,
+				3F2CDD811757A58D00BD8BCF /* SFMessage.h */,
+				3F2CDD821757A58D00BD8BCF /* SFMessage.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		2F1DBB8617612B5300118FDF /* CellDataTransforners */ = {
+			isa = PBXGroup;
+			children = (
+				2FB61772171743440037A5E5 /* SFBasicTextCellTransformer.h */,
+				2FB61773171743440037A5E5 /* SFBasicTextCellTransformer.m */,
+				2F42A44518BEA40700D3ED24 /* SFBillNoExtraDataCellTransformer.h */,
+				2F42A44618BEA40700D3ED24 /* SFBillNoExtraDataCellTransformer.m */,
+				2F18C50C171CB3B300C40783 /* SFBillSearchCellTransformer.h */,
+				2F18C50D171CB3B300C40783 /* SFBillSearchCellTransformer.m */,
+				2F0331D5175E7C8E00A1DEDD /* SFBillSponsorCellTransformer.h */,
+				2F0331D6175E7C8E00A1DEDD /* SFBillSponsorCellTransformer.m */,
+				2FA11C121714684400C12583 /* SFCellDataTransformers.h */,
+				2FA11C131714684400C12583 /* SFCellDataTransformers.m */,
+				3FB2E89718048B2A00E57473 /* SFCommitteeHearingCellTransformer.h */,
+				3FB2E89818048B2A00E57473 /* SFCommitteeHearingCellTransformer.m */,
+				3FA2ED7817A850D900DCC8F0 /* SFCommitteeMemberCellTransformer.h */,
+				3FA2ED7917A850D900DCC8F0 /* SFCommitteeMemberCellTransformer.m */,
+				2F41E8391715F964009E23F0 /* SFDefaultBillActionCellTransformer.h */,
+				2F41E83A1715F964009E23F0 /* SFDefaultBillActionCellTransformer.m */,
+				2FA11C1517146A5700C12583 /* SFDefaultBillCellTransformer.h */,
+				2FA11C1617146A5700C12583 /* SFDefaultBillCellTransformer.m */,
+				3F27C71B179A487E000DC68F /* SFDefaultCommitteeCellTransformer.h */,
+				3F27C71C179A487E000DC68F /* SFDefaultCommitteeCellTransformer.m */,
+				3FB4304717A8A55A00956FD6 /* SFDefaultHearingCellTransformer.h */,
+				3FB4304817A8A55A00956FD6 /* SFDefaultHearingCellTransformer.m */,
+				2F41E8301715B391009E23F0 /* SFDefaultLegislatorCellTransformer.h */,
+				2F41E8311715B391009E23F0 /* SFDefaultLegislatorCellTransformer.m */,
+				2F41E83C1716006B009E23F0 /* SFDefaultRollCallVoteCellTransformer.h */,
+				2F41E83D1716006B009E23F0 /* SFDefaultRollCallVoteCellTransformer.m */,
+				2F41E83F17160FEF009E23F0 /* SFLegislatorVoteCellTransformer.h */,
+				2F41E84017160FEF009E23F0 /* SFLegislatorVoteCellTransformer.m */,
+				2F0331DE175FADB600A1DEDD /* SFRollCallVoteByLegislatorCellTransformer.h */,
+				2F0331DF175FADB700A1DEDD /* SFRollCallVoteByLegislatorCellTransformer.m */,
+			);
+			name = CellDataTransforners;
+			sourceTree = "<group>";
+		};
+		2F834E5C165541EC006238AB = {
+			isa = PBXGroup;
+			children = (
+				2F834E8D165545C5006238AB /* Classes */,
+				2F834E94165545D4006238AB /* Other Sources */,
+				2F834E97165545D4006238AB /* Resources */,
+				2F834E6A165541EC006238AB /* Frameworks */,
+				2F834E68165541EC006238AB /* Products */,
+				3F95BCF416F90D6D009C879D /* LICENSE */,
+				3FF52DA819743E41009DD2E7 /* Podfile */,
+				89A58834B4C2827BAA84609F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2F834E68165541EC006238AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F834E67165541EC006238AB /* Congress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F834E6A165541EC006238AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F4B145019B8C48000F34D5B /* MessageUI.framework */,
+				3F54BCC7197EC81A00DBF5DF /* CongressKit */,
+				3F54BCD4197EC81A00DBF5DF /* CongressKitTests */,
+				3FE3AEE817D7D6A400F881D9 /* EventKitUI.framework */,
+				3FE3AEE617D7D41900F881D9 /* EventKit.framework */,
+				3F44A3EA17301F3100F2B3CA /* AddressBook.framework */,
+				3FE5F37D17564E10000D557E /* AddressBookUI.framework */,
+				2F23B38C169B3D8700B3CF49 /* CoreData.framework */,
+				2F834E6F165541EC006238AB /* CoreGraphics.framework */,
+				3FC667A416A0BCA5003E4341 /* CoreLocation.framework */,
+				2F26C03F167BC52F009E85C8 /* Crashlytics.framework */,
+				2F834E6D165541EC006238AB /* Foundation.framework */,
+				3F44A3E817301D7A00F2B3CA /* MapKit.framework */,
+				2F09B2E816558D440047461E /* MobileCoreServices.framework */,
+				2F58C600165AA1C20010FD45 /* QuartzCore.framework */,
+				2F09B2EA16558D690047461E /* SystemConfiguration.framework */,
+				2F834E6B165541EC006238AB /* UIKit.framework */,
+				3FC667A616A0BCF7003E4341 /* libsqlite3.dylib */,
+				2FF29E4E1655583600FAB0E3 /* libz.dylib */,
+				C05D06F169134ED1B1E4B5C4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F834E8D165545C5006238AB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FED56F516E921C700F0E9A5 /* Style */,
+				3FA1BE7B17CD302400F47DF5 /* Sharing */,
+				2F15CA24169CAC940050DCAE /* Misc */,
+				2F0FFFD11677A00800C3344F /* Categories */,
+				2FDAC54F171F37E10067F0D8 /* Formatters */,
+				2F09B31E16569C1B0047461E /* Models */,
+				2F834E8E165545C5006238AB /* Controllers */,
+				2F834E92165545C5006238AB /* Views */,
+				2F834E8F165545C5006238AB /* Services */,
+				2FA11C0B171467DB00C12583 /* Transformers */,
+				2F834E90165545C5006238AB /* SFAppDelegate.h */,
+				2F834E91165545C5006238AB /* SFAppDelegate.m */,
+				3FAE67181758ECE200F1EEE8 /* SFAppSettings.h */,
+				3FAE67191758ECE200F1EEE8 /* SFAppSettings.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2F834E8E165545C5006238AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1545316C556A300B5EF3D /* Bill */,
+				3F2E1E7417C280B6001CADD1 /* Committee */,
+				2FD1545616C5578600B5EF3D /* Follow */,
+				2FD1545516C556FE00B5EF3D /* Generic/Reusable */,
+				3FA2ED7B17A867DA00DCC8F0 /* Hearings */,
+				2FD1545416C556B400B5EF3D /* Legislator */,
+				2F0E38C516FCEA970043B4FD /* Settings/Info */,
+				2FAC77861843F7D800020B3A /* SFActionTableDataSource.h */,
+				2FAC77871843F7D800020B3A /* SFActionTableDataSource.m */,
+				2F4D29B716BB22E0007BDB0E /* SFActionTableViewController.h */,
+				2F4D29B816BB22E0007BDB0E /* SFActionTableViewController.m */,
+				2FEA7B9F16694BBD008C5E79 /* SFActivitySectionViewController.h */,
+				2FEA7BA016694BBD008C5E79 /* SFActivitySectionViewController.m */,
+				3FE3AEEA17D81F9900F881D9 /* SFCalendarEventViewController.h */,
+				3FE3AEEB17D81F9900F881D9 /* SFCalendarEventViewController.m */,
+				3FC667A816A0C130003E4341 /* SFDistrictMapViewController.h */,
+				3F061910174D7A9400D595D4 /* SFDistrictMapViewController.m */,
+				2F3FA8A7166812A200A63CFF /* SFMenuViewController.h */,
+				2F3FA8A8166812A200A63CFF /* SFMenuViewController.m */,
+				2FD1544D16C451E900B5EF3D /* SFVoteDetailViewController.h */,
+				2FD1544E16C451E900B5EF3D /* SFVoteDetailViewController.m */,
+				2F0E38B216FB5D000043B4FD /* SFCongressNavigationController.h */,
+				2F0E38B316FB5D010043B4FD /* SFCongressNavigationController.m */,
+				3FE5F38A1756A02A000D557E /* SFPeoplePickerNavigationController.h */,
+				3FE5F38B1756A02A000D557E /* SFPeoplePickerNavigationController.m */,
+				3F693A8F17654DFD0035AFF4 /* SFViewDeckController.h */,
+				3F693A9017654DFD0035AFF4 /* SFViewDeckController.m */,
+				2FAC77981844F77D00020B3A /* SFVoteCountTableDataSource.h */,
+				2FAC77991844F77D00020B3A /* SFVoteCountTableDataSource.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F834E8F165545C5006238AB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F58C4C6165A82140010FD45 /* SFBillService.h */,
+				2F58C4C7165A82140010FD45 /* SFBillService.m */,
+				2F09B2EF165596C20047461E /* SFCongressApiClient.h */,
+				2F09B2F0165596C30047461E /* SFCongressApiClient.m */,
+				2FF728EA16A99A65007488BB /* SFDataArchiver.h */,
+				2FF728EB16A99A65007488BB /* SFDataArchiver.m */,
+				2F09B31D16569A410047461E /* SFHTTPClientUtils.h */,
+				2F09B2F21655B4A80047461E /* SFLegislatorService.h */,
+				2F09B2F31655B4A80047461E /* SFLegislatorService.m */,
+				2FD1544416C4390100B5EF3D /* SFRollCallVoteService.h */,
+				2FD1544516C4390100B5EF3D /* SFRollCallVoteService.m */,
+				2F1D5EAF16D7CCFD00F2800D /* SFCongressURLService.h */,
+				2F1D5EB016D7CCFD00F2800D /* SFCongressURLService.m */,
+				3F79268416F10E0F00C10CC2 /* SFBoundaryService.h */,
+				3F79268516F10E0F00C10CC2 /* SFBoundaryService.m */,
+				3FEB86071799BB540033E467 /* SFCommitteeService.h */,
+				3FEB86081799BB540033E467 /* SFCommitteeService.m */,
+				3FA2ED7F17A86E7800DCC8F0 /* SFHearingService.h */,
+				3FA2ED8017A86E7800DCC8F0 /* SFHearingService.m */,
+				2F9B88C3183BC376009504C9 /* SFTagManager.h */,
+				2F9B88C4183BC376009504C9 /* SFTagManager.m */,
+				2F241648184F915F00337419 /* SFSynchronizedObjectManager.h */,
+				2F241649184F915F00337419 /* SFSynchronizedObjectManager.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F834E92165545C5006238AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F321CEE1811E1AE0079149F /* SFContentView.h */,
+				3F321CEF1811E1AE0079149F /* SFContentView.m */,
+				2FD754F1170A1F5F009C48D8 /* Buttons */,
+				2F6DBFF6166E5906007330CB /* SFBillDetailView.h */,
+				2F6DBFF7166E5906007330CB /* SFBillDetailView.m */,
+				2F6084B116C1A12E00EED484 /* SFBillsSectionView.h */,
+				2F6084B216C1A12E00EED484 /* SFBillsSectionView.m */,
+				2FCE888016F10A1D00DDB3AF /* SFLabel.h */,
+				2FCE888116F10A1D00DDB3AF /* SFLabel.m */,
+				2F0F00D7167A766700C3344F /* SFLegislatorDetailView.h */,
+				2F0F00D8167A766700C3344F /* SFLegislatorDetailView.m */,
+				3F36A3E316EE5AB600C61535 /* SFMapView.h */,
+				3F36A3E416EE5AB600C61535 /* SFMapView.m */,
+				2F85741916E541B50073EFA0 /* SFOpticView.h */,
+				2F85741A16E541B50073EFA0 /* SFOpticView.m */,
+				2F15C42E16BC52790069D929 /* SFSegmentedView.h */,
+				2F15C42F16BC52790069D929 /* SFSegmentedView.m */,
+				2FD1545016C4522600B5EF3D /* SFVoteDetailView.h */,
+				2FD1545116C4522600B5EF3D /* SFVoteDetailView.m */,
+				2FA4865316D527830058FD24 /* TableViewCells */,
+				2F0E388816F8AA040043B4FD /* SFCalloutBackgroundView.h */,
+				2F0E388916F8AA040043B4FD /* SFCalloutBackgroundView.m */,
+				2FB6177F1718B0AF0037A5E5 /* SFTableHeaderView.h */,
+				2FB617801718B0AF0037A5E5 /* SFTableHeaderView.m */,
+				2FA90436172AC1760077AB49 /* SFSettingsSectionView.h */,
+				2FA90437172AC1760077AB49 /* SFSettingsSectionView.m */,
+				2F0417681742BD1C0087C1AB /* SFFollowHowToView.h */,
+				2F0417691742BD1C0087C1AB /* SFFollowHowToView.m */,
+				3F83884B17BC257D002F1B01 /* SFCommitteeDetailView.h */,
+				3F83884C17BC257D002F1B01 /* SFCommitteeDetailView.m */,
+				3FDC568617C7251D0093C458 /* SFHearingDetailView.h */,
+				3FDC568717C7251D0093C458 /* SFHearingDetailView.m */,
+				2F241645184D3FCC00337419 /* SFInformationView.h */,
+				2F241646184D3FCC00337419 /* SFInformationView.m */,
+				3FF52DAC19745AEB009DD2E7 /* SFLineView.h */,
+				3FF52DAA19745AD5009DD2E7 /* SFLineView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F834E94165545D4006238AB /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2F834E95165545D4006238AB /* Congress-Prefix.pch */,
+				2F834E96165545D4006238AB /* main.m */,
+				2F834EB7165553EA006238AB /* SFSettings.h */,
+				2F09B27116555D500047461E /* SFSettings.m */,
+				2F09B27416555E6F0047461E /* SFSettingsExample.h */,
+				2F09B27516555E6F0047461E /* SFSettingsExample.m */,
+				2F98E1071836BC870012BC6E /* SFPushConfig.h */,
+				2F98E1081836BC870012BC6E /* SFPushConfig.m */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2F834E97165545D4006238AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA2C3519C8D1B900C8BCA7 /* Launch Screen.xib */,
+				2F7766E017C50B1000E1BA08 /* Images.xcassets */,
+				2F8C044716A48D41005E52F6 /* Beta.xcconfig */,
+				2F8C044816A48D83005E52F6 /* Debug.xcconfig */,
+				2F7C77CA16A497B40084DAF1 /* Release.xcconfig */,
+				2F834E98165545D4006238AB /* Congress-Info.plist */,
+				2F834E99165545D4006238AB /* InfoPlist.strings */,
+				3FA7BFDE17DF9DA200070ECF /* messagestyles.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2FA11C0B171467DB00C12583 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				2F1DBB8617612B5300118FDF /* CellDataTransforners */,
+				2F1DBB83176128E900118FDF /* SFBillTypeTransformer.h */,
+				2F1DBB84176128E900118FDF /* SFBillTypeTransformer.m */,
+				2F1DBB8717612B7000118FDF /* SFBillIdTransformer.h */,
+				2F1DBB8817612B7000118FDF /* SFBillIdTransformer.m */,
+				3FDDF994179723160024A6AF /* SFBillIdentifierTransformer.h */,
+				3FDDF995179723160024A6AF /* SFBillIdentifierTransformer.m */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
+		2FA4865316D527830058FD24 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1E6A7166913FA005B3C97 /* SFNavTableCell.h */,
+				2FD1E6A8166913FA005B3C97 /* SFNavTableCell.m */,
+				2FED56FC16E94ED700F0E9A5 /* SFTableCell.h */,
+				2FED56FD16E94ED800F0E9A5 /* SFTableCell.m */,
+				2FAC77951844F10C00020B3A /* SFValue1TableCell.h */,
+				2FAC77961844F10C00020B3A /* SFValue1TableCell.m */,
+				2F38B6BB1856307600000064 /* SFSettingCell.h */,
+				2F38B6BC1856307600000064 /* SFSettingCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		2FD1545316C556A300B5EF3D /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				2F6DBFBF166E4317007330CB /* SFBillDetailViewController.h */,
+				2F6DBFC0166E4317007330CB /* SFBillDetailViewController.m */,
+				2F15C43216BC784B0069D929 /* SFBillSegmentedViewController.h */,
+				2F15C43116BC784B0069D929 /* SFBillSegmentedViewController.m */,
+				2FEA8DF816B07BCE0022B860 /* SFBillsSectionViewController.h */,
+				2FEA8DF716B07BCE0022B860 /* SFBillsSectionViewController.m */,
+				2FF4F7AC16CED13500F9AFD9 /* SFBillsTableViewController.h */,
+				2FF4F7AD16CED13500F9AFD9 /* SFBillsTableViewController.m */,
+				2FAC77891843FA6900020B3A /* SFBillTableDataSource.h */,
+				2FAC778A1843FA6900020B3A /* SFBillTableDataSource.m */,
+				3FDDF9881795CED10024A6AF /* SFFullTextViewController.h */,
+				3FDDF9891795CED10024A6AF /* SFFullTextViewController.m */,
+				2F18C509171CB26600C40783 /* SFSearchBillsTableViewController.h */,
+				2F18C50A171CB26600C40783 /* SFSearchBillsTableViewController.m */,
+				2FAC778C1843FDFB00020B3A /* SFBillSearchTableDataSource.h */,
+				2FAC778D1843FDFB00020B3A /* SFBillSearchTableDataSource.m */,
+			);
+			name = Bill;
+			sourceTree = "<group>";
+		};
+		2FD1545416C556B400B5EF3D /* Legislator */ = {
+			isa = PBXGroup;
+			children = (
+				2FAC77AA184536C700020B3A /* SFLegislatorVotingRecordDataSource.h */,
+				2FAC77AB184536C700020B3A /* SFLegislatorVotingRecordDataSource.m */,
+				2F0F00DA167A7D0100C3344F /* SFLegislatorDetailViewController.h */,
+				2F0F00DB167A7D0100C3344F /* SFLegislatorDetailViewController.m */,
+				2F0331D2175D3C2A00A1DEDD /* SFLegislatorSegmentedViewController.h */,
+				2F0331D3175D3C2A00A1DEDD /* SFLegislatorSegmentedViewController.m */,
+				2F6DC02D166FAF0C007330CB /* SFLegislatorsSectionViewController.h */,
+				2F6DC02E166FAF0C007330CB /* SFLegislatorsSectionViewController.m */,
+				2FBAC22316B88C51009198ED /* SFLegislatorTableViewController.h */,
+				2FBAC22416B88C51009198ED /* SFLegislatorTableViewController.m */,
+				2FB6176917171B2D0037A5E5 /* SFLegislatorVoteTableViewController.h */,
+				2FB6176A17171B2D0037A5E5 /* SFLegislatorVoteTableViewController.m */,
+				2FAC778F184418B700020B3A /* SFLegislatorVoteTableDataSource.h */,
+				2FAC7790184418B700020B3A /* SFLegislatorVoteTableDataSource.m */,
+				3F73A6F617552B810088BE6A /* SFLocalLegislatorsViewController.h */,
+				3F73A6F717552B810088BE6A /* SFLocalLegislatorsViewController.m */,
+				2F0331D8175E7E1000A1DEDD /* SFLegislatorBillsTableViewController.h */,
+				2F0331D9175E7E1000A1DEDD /* SFLegislatorBillsTableViewController.m */,
+				2F0331DB175FA1EC00A1DEDD /* SFLegislatorVotingRecordTableViewController.h */,
+				2F0331DC175FA1EC00A1DEDD /* SFLegislatorVotingRecordTableViewController.m */,
+				2FAC77801843C12900020B3A /* SFLegislatorTableDataSource.h */,
+				2FAC77811843C12900020B3A /* SFLegislatorTableDataSource.m */,
+				2FAC77A71845314000020B3A /* SFLegislatorBillsTableDataSource.h */,
+				2FAC77A81845314000020B3A /* SFLegislatorBillsTableDataSource.m */,
+			);
+			name = Legislator;
+			sourceTree = "<group>";
+		};
+		2FD1545516C556FE00B5EF3D /* Generic/Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				2F247DBE1671389B006AD075 /* SFMainDeckTableViewController.h */,
+				2F247DBF1671389B006AD075 /* SFMainDeckTableViewController.m */,
+				2F15C42516BC52070069D929 /* SFSegmentedViewController.h */,
+				2F15C42616BC52070069D929 /* SFSegmentedViewController.m */,
+				2FEA8D9F16AF27E60022B860 /* SFShareableViewController.h */,
+				2FEA8DA016AF27E60022B860 /* SFShareableViewController.m */,
+				2FA4865D16D52CBA0058FD24 /* SFMixedTableViewController.h */,
+				2FA4865E16D52CBA0058FD24 /* SFMixedTableViewController.m */,
+				2F9F7AF816DD65D900DE8AF1 /* SFDataTableViewController.h */,
+				2F9F7AF916DD65D900DE8AF1 /* SFDataTableViewController.m */,
+				2FED56E716E8F11400F0E9A5 /* SFCongressTableViewController.h */,
+				2FED56E816E8F11400F0E9A5 /* SFCongressTableViewController.m */,
+				2F7C09EF1843A33B00B28B82 /* SFDataTableDataSource.h */,
+				2F7C09F01843A33B00B28B82 /* SFDataTableDataSource.m */,
+				2FAC77831843F42100020B3A /* SFMixedTableDataSource.h */,
+				2FAC77841843F42100020B3A /* SFMixedTableDataSource.m */,
+			);
+			name = Generic/Reusable;
+			sourceTree = "<group>";
+		};
+		2FD1545616C5578600B5EF3D /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				2F6084AE16C0557300EED484 /* SFFollowingSectionViewController.h */,
+				2F6084AF16C0557400EED484 /* SFFollowingSectionViewController.m */,
+				2FAC77B418468E3900020B3A /* SFEditFollowedItemsDataSource.h */,
+				2FAC77B518468E3900020B3A /* SFEditFollowedItemsDataSource.m */,
+				2F42A44818BEA77F00D3ED24 /* SFFollowingBillsTableViewController.h */,
+				2F42A44918BEA77F00D3ED24 /* SFFollowingBillsTableViewController.m */,
+			);
+			name = Follow;
+			sourceTree = "<group>";
+		};
+		2FD754F1170A1F5F009C48D8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2FD754EE170A1F4F009C48D8 /* SFImageButton.h */,
+				2FD754EF170A1F50009C48D8 /* SFImageButton.m */,
+				2F8E294516EE2999006F54E1 /* SFCongressButton.h */,
+				2F8E294616EE2999006F54E1 /* SFCongressButton.m */,
+				2FCE888316F2561C00DDB3AF /* SFFollowButton.h */,
+				2FCE888416F2561D00DDB3AF /* SFFollowButton.m */,
+				2FC88389170E0ECC00CD9E57 /* SFMapToggleButton.h */,
+				2FC8838A170E0ECC00CD9E57 /* SFMapToggleButton.m */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		2FDAC54F171F37E10067F0D8 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				2FDAC559171F389C0067F0D8 /* SFDateFormatterUtil.h */,
+				2FDAC55A171F389C0067F0D8 /* SFDateFormatterUtil.m */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		2FED56F516E921C700F0E9A5 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D29A516BAD9DD007BDB0E /* UIBarButtonItem+SFCongressAppStyle.h */,
+				2F4D29A616BAD9DD007BDB0E /* UIBarButtonItem+SFCongressAppStyle.m */,
+				2F19CBAD1757F2FD00185BB2 /* UIImage+SFCongressAppStyle.h */,
+				2F19CBAE1757F2FD00185BB2 /* UIImage+SFCongressAppStyle.m */,
+				2FED56D816E7E2EB00F0E9A5 /* SFCongressAppStyle.h */,
+				2FED56D916E7E2EB00F0E9A5 /* SFCongressAppStyle.m */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		3F2E1E7417C280B6001CADD1 /* Committee */ = {
+			isa = PBXGroup;
+			children = (
+				3F2E1E7517C280C3001CADD1 /* SFCommitteeDetailViewController.h */,
+				3F2E1E7617C280C3001CADD1 /* SFCommitteeDetailViewController.m */,
+				2FAC779E18452AB600020B3A /* SFCommitteeHearingsTableDataSource.h */,
+				2FAC779F18452AB600020B3A /* SFCommitteeHearingsTableDataSource.m */,
+				3FB2E89A18048D1E00E57473 /* SFCommitteeHearingsTableViewController.h */,
+				3FB2E89B18048D1E00E57473 /* SFCommitteeHearingsTableViewController.m */,
+				2FAC77A418452F0100020B3A /* SFCommitteeMembersTableDataSource.h */,
+				2FAC77A518452F0100020B3A /* SFCommitteeMembersTableDataSource.m */,
+				3F2E1E7717C280C3001CADD1 /* SFCommitteeMembersTableViewController.h */,
+				3F2E1E7817C280C3001CADD1 /* SFCommitteeMembersTableViewController.m */,
+				3F2E1E7917C280C3001CADD1 /* SFCommitteeSegmentedViewController.h */,
+				3F2E1E7A17C280C3001CADD1 /* SFCommitteeSegmentedViewController.m */,
+				3F2E1E7B17C280C3001CADD1 /* SFCommitteesSectionViewController.h */,
+				3F2E1E7C17C280C3001CADD1 /* SFCommitteesSectionViewController.m */,
+				2FAC77A118452E5700020B3A /* SFCommitteesTableDataSource.h */,
+				2FAC77A218452E5700020B3A /* SFCommitteesTableDataSource.m */,
+				3F2E1E7D17C280C3001CADD1 /* SFCommitteesTableViewController.h */,
+				3F2E1E7E17C280C3001CADD1 /* SFCommitteesTableViewController.m */,
+			);
+			name = Committee;
+			sourceTree = "<group>";
+		};
+		3F54BCC7197EC81A00DBF5DF /* CongressKit */ = {
+			isa = PBXGroup;
+			children = (
+				3F54BCEC197EC9C100DBF5DF /* Congress-Bridging-Header.h */,
+				3F54BCCA197EC81A00DBF5DF /* CongressKit.h */,
+				3F54BCC8197EC81A00DBF5DF /* Supporting Files */,
+				3F54BCEA197EC83C00DBF5DF /* Main.storyboard */,
+				3F54BCED197EC9C200DBF5DF /* LegislatorDetailView.swift */,
+				3F54BCEF197EE2B000DBF5DF /* LegislatorDetailViewController.swift */,
+				3F54BCF1197EE5B000DBF5DF /* IBAssets.xcassets */,
+			);
+			path = CongressKit;
+			sourceTree = "<group>";
+		};
+		3F54BCC8197EC81A00DBF5DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F54BCC9197EC81A00DBF5DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F54BCD4197EC81A00DBF5DF /* CongressKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F54BCD7197EC81A00DBF5DF /* CongressKitTests.swift */,
+				3F54BCD5197EC81A00DBF5DF /* Supporting Files */,
+			);
+			path = CongressKitTests;
+			sourceTree = "<group>";
+		};
+		3F54BCD5197EC81A00DBF5DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F54BCD6197EC81A00DBF5DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FA1BE7B17CD302400F47DF5 /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2E88A180460FB00E57473 /* Sources */,
+				3FA1BEA517CD50CA00F47DF5 /* Activities */,
+				3FB2E889180460EE00E57473 /* Providers */,
+			);
+			name = Sharing;
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		3FA1BEA517CD50CA00F47DF5 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				3FA1BEA617CD50CA00F47DF5 /* SFActivity.h */,
+				3FA1BEA717CD50CA00F47DF5 /* SFActivity.m */,
+				3FA1BEA817CD50CA00F47DF5 /* SFCongressGovActivity.h */,
+				3FA1BEA917CD50CA00F47DF5 /* SFCongressGovActivity.m */,
+				3FA1BEAA17CD50CA00F47DF5 /* SFFacebookActivity.h */,
+				3FA1BEAB17CD50CA00F47DF5 /* SFFacebookActivity.m */,
+				3FA1BEAC17CD50CA00F47DF5 /* SFGovTrackActivity.h */,
+				3FA1BEAD17CD50CA00F47DF5 /* SFGovTrackActivity.m */,
+				3FA1BEAE17CD50CA00F47DF5 /* SFOpenCongressActivity.h */,
+				3FA1BEAF17CD50CA00F47DF5 /* SFOpenCongressActivity.m */,
+				3FA1BEB017CD50CA00F47DF5 /* SFSafariActivity.h */,
+				3FA1BEB117CD50CA00F47DF5 /* SFSafariActivity.m */,
+				3FE3AEE317D7CE5B00F881D9 /* SFCalendarActivity.h */,
+				3FE3AEE417D7CE5B00F881D9 /* SFCalendarActivity.m */,
+			);
+			name = Activities;
+			path = Classes/Sharing/Activities;
+			sourceTree = SOURCE_ROOT;
+		};
+		3FA2ED7B17A867DA00DCC8F0 /* Hearings */ = {
+			isa = PBXGroup;
+			children = (
+				3FB4304A17A8A80E00956FD6 /* SFHearingsTableViewController.h */,
+				3FB4304B17A8A80E00956FD6 /* SFHearingsTableViewController.m */,
+				3FDC568017C717970093C458 /* SFHearingsSectionViewController.h */,
+				3FDC568117C717970093C458 /* SFHearingsSectionViewController.m */,
+				3FDC568317C723AD0093C458 /* SFHearingDetailViewController.h */,
+				3FDC568417C723AD0093C458 /* SFHearingDetailViewController.m */,
+				2FAC779B1845180200020B3A /* SFHearingsTableDataSource.h */,
+				2FAC779C1845180200020B3A /* SFHearingsTableDataSource.m */,
+			);
+			name = Hearings;
+			sourceTree = "<group>";
+		};
+		3FB2E889180460EE00E57473 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				3FBACD3517CE51FF0085E913 /* SFActivityItemProvider.h */,
+				3FBACD3617CE51FF0085E913 /* SFActivityItemProvider.m */,
+				3FE3AEE017D7CDB900F881D9 /* SFHearingActivityItemProvider.h */,
+				3FE3AEE117D7CDB900F881D9 /* SFHearingActivityItemProvider.m */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		3FB2E88A180460FB00E57473 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2E88E18046AD800E57473 /* SFTextActivityItemSource.h */,
+				3FB2E88F18046AD800E57473 /* SFTextActivityItemSource.m */,
+				3FB2E88B1804612D00E57473 /* SFBillActivityItemSource.h */,
+				3FB2E88C1804612D00E57473 /* SFBillActivityItemSource.m */,
+				3FB2E8911804713000E57473 /* SFLegislatorActivityItemSource.h */,
+				3FB2E8921804713000E57473 /* SFLegislatorActivityItemSource.m */,
+				3FB2E894180474B200E57473 /* SFCommitteeActivityItemSource.h */,
+				3FB2E895180474B200E57473 /* SFCommitteeActivityItemSource.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		89A58834B4C2827BAA84609F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				736A965F3A20876DF0F3AE8A /* Pods.debug.xcconfig */,
+				8C7F9BE738322BBC5A2E2FEA /* Pods.release.xcconfig */,
+				B4D09AD6465D4F6BD724DBEC /* Pods.beta.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F834E66165541EC006238AB /* Congress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F834E85165541EC006238AB /* Build configuration list for PBXNativeTarget "Congress" */;
+			buildPhases = (
+				3F7F5BBDCFD2436A96D10F19 /* Check Pods Manifest.lock */,
+				2F834E63165541EC006238AB /* Sources */,
+				2F834E64165541EC006238AB /* Frameworks */,
+				2FD1541D16C3065300B5EF3D /* ShellScript */,
+				2F834E65165541EC006238AB /* Resources */,
+				2F26C03E167BC4EE009E85C8 /* ShellScript */,
+				DCBFA64B2F1E407E9FCB2F4C /* Copy Pods Resources */,
+				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
+				3F54BCE6197EC81A00DBF5DF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Congress;
+			productName = Congress;
+			productReference = 2F834E67165541EC006238AB /* Congress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F834E5E165541EC006238AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SF;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Sunlight Foundation";
+				TargetAttributes = {
+					2F834E66165541EC006238AB = {
+						DevelopmentTeam = 3A9R2W6JVG;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2F834E61165541EC006238AB /* Build configuration list for PBXProject "Congress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				es,
+				fr,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nl,
+				pt,
+				pt_PT,
+				ru,
+				sv,
+				zh_Hans,
+				zh_Hant,
+			);
+			mainGroup = 2F834E5C165541EC006238AB;
+			productRefGroup = 2F834E68165541EC006238AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F834E66165541EC006238AB /* Congress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F834E65165541EC006238AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF52DA919743E41009DD2E7 /* Podfile in Resources */,
+				2F834EA2165545D4006238AB /* InfoPlist.strings in Resources */,
+				3FA7BFDF17DF9DA200070ECF /* messagestyles.json in Resources */,
+				3F54BCEB197EC83C00DBF5DF /* Main.storyboard in Resources */,
+				3F95BCF516F90D6D009C879D /* LICENSE in Resources */,
+				3FFA2C3619C8D1B900C8BCA7 /* Launch Screen.xib in Resources */,
+				2F7766E117C50B1000E1BA08 /* Images.xcassets in Resources */,
+				3F54BCF2197EE5B000DBF5DF /* IBAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F26C03E167BC4EE009E85C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    ./Crashlytics.framework/run 7f920088e925e57cb9f436fa327d06fefc4930dd\nfi";
+		};
+		2FD1541D16C3065300B5EF3D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\ngit=`sh /etc/profile; which git`\ncount=`$git rev-list  --all --count`\necho \"BUILD_NUMBER=$count\" > Resources/buildnumber.xcconfig";
+		};
+		3F7F5BBDCFD2436A96D10F19 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		DCBFA64B2F1E407E9FCB2F4C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Objective-Clean Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -z ${SKIP_OBJCLEAN} || ${SKIP_OBJCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Objective-Clean.app\" ]]; then \n\"${LOCAL_APPS_DIR}\"/Objective-Clean.app/Contents/Resources/ObjClean.app/Contents/MacOS/ObjClean \"${SRCROOT}\" \nelse\necho \"warning: You have to install and set up Objective-Clean to use its features!\" \nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F834E63165541EC006238AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F834E93165545C5006238AB /* SFAppDelegate.m in Sources */,
+				2F834EA0165545D4006238AB /* main.m in Sources */,
+				2FAC77A618452F0200020B3A /* SFCommitteeMembersTableDataSource.m in Sources */,
+				2F09B27216555D500047461E /* SFSettings.m in Sources */,
+				2F09B2F1165596C30047461E /* SFCongressApiClient.m in Sources */,
+				2F09B2F41655B4A80047461E /* SFLegislatorService.m in Sources */,
+				3FD1C76E18B50ADC0033D5E2 /* SFNotificationSettingsViewController.m in Sources */,
+				2F58C4C8165A82140010FD45 /* SFBillService.m in Sources */,
+				2F3FA8A9166812A200A63CFF /* SFMenuViewController.m in Sources */,
+				2FD1E6A9166913FA005B3C97 /* SFNavTableCell.m in Sources */,
+				2FEA7BA116694BBD008C5E79 /* SFActivitySectionViewController.m in Sources */,
+				2F6DBFC1166E4317007330CB /* SFBillDetailViewController.m in Sources */,
+				2F6DBFF8166E5906007330CB /* SFBillDetailView.m in Sources */,
+				2F6DC02F166FAF0C007330CB /* SFLegislatorsSectionViewController.m in Sources */,
+				2F247DC01671389B006AD075 /* SFMainDeckTableViewController.m in Sources */,
+				2F0FFFED1677A0A100C3344F /* NSDate+Congress.m in Sources */,
+				2F0F00D9167A766700C3344F /* SFLegislatorDetailView.m in Sources */,
+				2F0F00DC167A7D0100C3344F /* SFLegislatorDetailViewController.m in Sources */,
+				2F15C9F0169C962E0050DCAE /* SFSynchronizedObject.m in Sources */,
+				2F42A44A18BEA77F00D3ED24 /* SFFollowingBillsTableViewController.m in Sources */,
+				2FAC77821843C12900020B3A /* SFLegislatorTableDataSource.m in Sources */,
+				2F9B88C5183BC376009504C9 /* SFTagManager.m in Sources */,
+				2F15C9F3169C96EC0050DCAE /* SFBill.m in Sources */,
+				2F15C9F6169C96ED0050DCAE /* SFLegislator.m in Sources */,
+				2FF728EC16A99A66007488BB /* SFDataArchiver.m in Sources */,
+				2FEA8DA116AF27E60022B860 /* SFShareableViewController.m in Sources */,
+				2FEA8DF916B07BCE0022B860 /* SFBillsSectionViewController.m in Sources */,
+				2FBAC22516B88C51009198ED /* SFLegislatorTableViewController.m in Sources */,
+				2F4D29A716BAD9DD007BDB0E /* UIBarButtonItem+SFCongressAppStyle.m in Sources */,
+				2FAC77AC184536C700020B3A /* SFLegislatorVotingRecordDataSource.m in Sources */,
+				2F4D29B316BB0A93007BDB0E /* SFRollCallVote.m in Sources */,
+				2F4D29B616BB0BB0007BDB0E /* SFBillAction.m in Sources */,
+				2F4D29B916BB22E1007BDB0E /* SFActionTableViewController.m in Sources */,
+				2F15C42716BC52070069D929 /* SFSegmentedViewController.m in Sources */,
+				2F15C43016BC52790069D929 /* SFSegmentedView.m in Sources */,
+				2F15C43316BC784B0069D929 /* SFBillSegmentedViewController.m in Sources */,
+				2F6084B016C0557500EED484 /* SFFollowingSectionViewController.m in Sources */,
+				2FAC77851843F42100020B3A /* SFMixedTableDataSource.m in Sources */,
+				2F6084B316C1A12E00EED484 /* SFBillsSectionView.m in Sources */,
+				2FD1544616C4390200B5EF3D /* SFRollCallVoteService.m in Sources */,
+				2FD1544F16C451E900B5EF3D /* SFVoteDetailViewController.m in Sources */,
+				2FD1545216C4522600B5EF3D /* SFVoteDetailView.m in Sources */,
+				2FF4F7AE16CED13500F9AFD9 /* SFBillsTableViewController.m in Sources */,
+				2FA4865F16D52CBA0058FD24 /* SFMixedTableViewController.m in Sources */,
+				2F1D5EB116D7CCFD00F2800D /* SFCongressURLService.m in Sources */,
+				3F4B145719BA5E9700F34D5B /* SFDebugSettingsViewController.m in Sources */,
+				2F9F7AF416DBCB5600DE8AF1 /* UIView+ViewGeometryAdditions.m in Sources */,
+				2F9F7AFA16DD65D900DE8AF1 /* SFDataTableViewController.m in Sources */,
+				3FB2E89018046AD800E57473 /* SFTextActivityItemSource.m in Sources */,
+				2F42A44718BEA40700D3ED24 /* SFBillNoExtraDataCellTransformer.m in Sources */,
+				3FE3AEE217D7CDB900F881D9 /* SFHearingActivityItemProvider.m in Sources */,
+				2F85741B16E541B50073EFA0 /* SFOpticView.m in Sources */,
+				2FED56DA16E7E2EB00F0E9A5 /* SFCongressAppStyle.m in Sources */,
+				2FED56E916E8F11400F0E9A5 /* SFCongressTableViewController.m in Sources */,
+				3FE3AEE517D7CE5B00F881D9 /* SFCalendarActivity.m in Sources */,
+				2FED56FE16E94EDA00F0E9A5 /* SFTableCell.m in Sources */,
+				2F7C09F11843A33B00B28B82 /* SFDataTableDataSource.m in Sources */,
+				2F8E294716EE2999006F54E1 /* SFCongressButton.m in Sources */,
+				2F8E295416EE77C0006F54E1 /* SFSettingsSectionViewController.m in Sources */,
+				3F36A3E516EE5AB600C61535 /* SFMapView.m in Sources */,
+				2F98E1091836BC870012BC6E /* SFPushConfig.m in Sources */,
+				2F241644184D3F8C00337419 /* SFInformationSectionViewController.m in Sources */,
+				3F79268616F10E0F00C10CC2 /* SFBoundaryService.m in Sources */,
+				3FB2E89C18048D1E00E57473 /* SFCommitteeHearingsTableViewController.m in Sources */,
+				2FCE888216F10A1D00DDB3AF /* SFLabel.m in Sources */,
+				2FCE888516F2561D00DDB3AF /* SFFollowButton.m in Sources */,
+				2F0E388A16F8AA040043B4FD /* SFCalloutBackgroundView.m in Sources */,
+				2F0E389316F90BD80043B4FD /* NSString+Congress.m in Sources */,
+				2F0E38B416FB5D020043B4FD /* SFCongressNavigationController.m in Sources */,
+				2F0E38C416FCE42E0043B4FD /* SVPullToRefreshView+Congress.m in Sources */,
+				2FAC77A318452E5700020B3A /* SFCommitteesTableDataSource.m in Sources */,
+				2F1B05EC17033F9900A26712 /* IIViewDeckController+SFStatePreservation.m in Sources */,
+				2FD754F0170A1F51009C48D8 /* SFImageButton.m in Sources */,
+				2FD754F4170A2624009C48D8 /* NSMutableAttributedString+Congress.m in Sources */,
+				3F373CF9181228BC007F68C0 /* NSLayoutConstraint+Congress.m in Sources */,
+				2FC88385170CCA9A00CD9E57 /* NSURL+Congress.m in Sources */,
+				2FC8838B170E0ECC00CD9E57 /* SFMapToggleButton.m in Sources */,
+				2FA11C141714684400C12583 /* SFCellDataTransformers.m in Sources */,
+				2FA11C1717146A5700C12583 /* SFDefaultBillCellTransformer.m in Sources */,
+				2F241647184D3FCC00337419 /* SFInformationView.m in Sources */,
+				2F38B6BA1856206500000064 /* SFSettingsDataSource.m in Sources */,
+				2FA11C1A17146B1400C12583 /* SFCellData.m in Sources */,
+				3F4B145419BA5CCF00F34D5B /* SFDebugSettingsDataSource.m in Sources */,
+				2F41E8321715B391009E23F0 /* SFDefaultLegislatorCellTransformer.m in Sources */,
+				2F41E83B1715F964009E23F0 /* SFDefaultBillActionCellTransformer.m in Sources */,
+				2F41E83E1716006B009E23F0 /* SFDefaultRollCallVoteCellTransformer.m in Sources */,
+				2F41E84117160FF0009E23F0 /* SFLegislatorVoteCellTransformer.m in Sources */,
+				2FB6176B17171B2D0037A5E5 /* SFLegislatorVoteTableViewController.m in Sources */,
+				2FAC778E1843FDFB00020B3A /* SFBillSearchTableDataSource.m in Sources */,
+				3FB2E88D1804612D00E57473 /* SFBillActivityItemSource.m in Sources */,
+				2FB61774171743440037A5E5 /* SFBasicTextCellTransformer.m in Sources */,
+				2FB617811718B0AF0037A5E5 /* SFTableHeaderView.m in Sources */,
+				2F18C50B171CB26600C40783 /* SFSearchBillsTableViewController.m in Sources */,
+				2F18C50E171CB3B300C40783 /* SFBillSearchCellTransformer.m in Sources */,
+				2FDAC55B171F389C0067F0D8 /* SFDateFormatterUtil.m in Sources */,
+				2FAC77881843F7D800020B3A /* SFActionTableDataSource.m in Sources */,
+				2FA90438172AC1760077AB49 /* SFSettingsSectionView.m in Sources */,
+				2F04176A1742BD1C0087C1AB /* SFFollowHowToView.m in Sources */,
+				2FAC77A91845314000020B3A /* SFLegislatorBillsTableDataSource.m in Sources */,
+				3F061911174D7A9400D595D4 /* SFDistrictMapViewController.m in Sources */,
+				3F73A6F817552B810088BE6A /* SFLocalLegislatorsViewController.m in Sources */,
+				3FF52DAB19745AD5009DD2E7 /* SFLineView.m in Sources */,
+				3FE5F38C1756A02A000D557E /* SFPeoplePickerNavigationController.m in Sources */,
+				2F19CBAF1757F2FD00185BB2 /* UIImage+SFCongressAppStyle.m in Sources */,
+				3FB2E89918048B2A00E57473 /* SFCommitteeHearingCellTransformer.m in Sources */,
+				3F2CDD831757A58D00BD8BCF /* SFMessage.m in Sources */,
+				3FAE671A1758ECE200F1EEE8 /* SFAppSettings.m in Sources */,
+				2F0331D4175D3C2A00A1DEDD /* SFLegislatorSegmentedViewController.m in Sources */,
+				2F0331D7175E7C8E00A1DEDD /* SFBillSponsorCellTransformer.m in Sources */,
+				2FAC77B618468E3900020B3A /* SFEditFollowedItemsDataSource.m in Sources */,
+				2F0331DA175E7E1100A1DEDD /* SFLegislatorBillsTableViewController.m in Sources */,
+				2F0331DD175FA1ED00A1DEDD /* SFLegislatorVotingRecordTableViewController.m in Sources */,
+				2F0331E0175FADB700A1DEDD /* SFRollCallVoteByLegislatorCellTransformer.m in Sources */,
+				2F1DBB85176128E900118FDF /* SFBillTypeTransformer.m in Sources */,
+				2F1DBB8917612B7000118FDF /* SFBillIdTransformer.m in Sources */,
+				2FAC7791184418B700020B3A /* SFLegislatorVoteTableDataSource.m in Sources */,
+				3FDDF98A1795CED10024A6AF /* SFFullTextViewController.m in Sources */,
+				2FAC779A1844F77D00020B3A /* SFVoteCountTableDataSource.m in Sources */,
+				2FAC778B1843FA6900020B3A /* SFBillTableDataSource.m in Sources */,
+				2F24164A184F915F00337419 /* SFSynchronizedObjectManager.m in Sources */,
+				3FDDF99017971A700024A6AF /* SFBillIdentifier.m in Sources */,
+				3FDDF996179723160024A6AF /* SFBillIdentifierTransformer.m in Sources */,
+				3FE3AEEC17D81F9900F881D9 /* SFCalendarEventViewController.m in Sources */,
+				3F693A9117654DFD0035AFF4 /* SFViewDeckController.m in Sources */,
+				3FEB86091799BB540033E467 /* SFCommitteeService.m in Sources */,
+				3FEB860C1799BCC50033E467 /* SFCommittee.m in Sources */,
+				3F27C71D179A487E000DC68F /* SFDefaultCommitteeCellTransformer.m in Sources */,
+				2FAC77A018452AB600020B3A /* SFCommitteeHearingsTableDataSource.m in Sources */,
+				3FA2ED7A17A850D900DCC8F0 /* SFCommitteeMemberCellTransformer.m in Sources */,
+				3FA2ED7E17A8681B00DCC8F0 /* SFHearing.m in Sources */,
+				3FA2ED8117A86E7800DCC8F0 /* SFHearingService.m in Sources */,
+				3FB4304917A8A55A00956FD6 /* SFDefaultHearingCellTransformer.m in Sources */,
+				2FAC77971844F10C00020B3A /* SFValue1TableCell.m in Sources */,
+				3FC593F518A2ECE600203BFD /* SFAnalyticsSettingsDataSource.m in Sources */,
+				3FB4304C17A8A80E00956FD6 /* SFHearingsTableViewController.m in Sources */,
+				3F83884D17BC257D002F1B01 /* SFCommitteeDetailView.m in Sources */,
+				3F2E1E7F17C280C3001CADD1 /* SFCommitteeDetailViewController.m in Sources */,
+				3FC593F218A2D86700203BFD /* SFNotificationSettingsDataSource.m in Sources */,
+				2F7766DF17C403B500E1BA08 /* UIDevice+VersionCheck.m in Sources */,
+				3F2E1E8017C280C3001CADD1 /* SFCommitteeMembersTableViewController.m in Sources */,
+				3F2E1E8117C280C3001CADD1 /* SFCommitteeSegmentedViewController.m in Sources */,
+				3F2E1E8217C280C3001CADD1 /* SFCommitteesSectionViewController.m in Sources */,
+				3F2E1E8317C280C3001CADD1 /* SFCommitteesTableViewController.m in Sources */,
+				2F38B6BD1856307600000064 /* SFSettingCell.m in Sources */,
+				3FB2E8931804713000E57473 /* SFLegislatorActivityItemSource.m in Sources */,
+				3FDC568217C717970093C458 /* SFHearingsSectionViewController.m in Sources */,
+				3FDC568517C723AD0093C458 /* SFHearingDetailViewController.m in Sources */,
+				2FAC779D1845180200020B3A /* SFHearingsTableDataSource.m in Sources */,
+				3FDC568817C7251D0093C458 /* SFHearingDetailView.m in Sources */,
+				3FA1BEB217CD50CA00F47DF5 /* SFActivity.m in Sources */,
+				3FB2E896180474B200E57473 /* SFCommitteeActivityItemSource.m in Sources */,
+				3FA1BEB317CD50CA00F47DF5 /* SFCongressGovActivity.m in Sources */,
+				3FA1BEB417CD50CA00F47DF5 /* SFFacebookActivity.m in Sources */,
+				3FA1BEB517CD50CA00F47DF5 /* SFGovTrackActivity.m in Sources */,
+				3FA1BEB617CD50CA00F47DF5 /* SFOpenCongressActivity.m in Sources */,
+				3FA1BEB717CD50CA00F47DF5 /* SFSafariActivity.m in Sources */,
+				3F86F1C319B0F51200BC3FBC /* SFOCEmailConfirmationViewController.m in Sources */,
+				3FBACD3717CE51FF0085E913 /* SFActivityItemProvider.m in Sources */,
+				3F321CF01811E1AE0079149F /* SFContentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F834E99165545D4006238AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F834E9A165545D4006238AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F0F00D5167A6AB700C3344F /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8C044716A48D41005E52F6 /* Beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sunlight Foundation (3A9R2W6JVG)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "2a6f58d8-a024-492b-bac8-a70d07348a71";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		2F0F00D6167A6AB700C3344F /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D09AD6465D4F6BD724DBEC /* Pods.beta.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sunlight Foundation (3A9R2W6JVG)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/Congress-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Resources/Congress-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2a6f58d8-a024-492b-bac8-a70d07348a71";
+				SWIFT_OBJC_BRIDGING_HEADER = "CongressKit/Congress-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Beta;
+		};
+		2F834E83165541EC006238AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8C044816A48D83005E52F6 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				"COPY_PHASE_STRIP[sdk=*]" = NO;
+				DEAD_CODE_STRIPPING = "$(inherited)";
+				DEPLOYMENT_POSTPROCESSING = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = "$(inherited)";
+				GCC_OPTIMIZATION_LEVEL = "$(inherited)";
+				"GCC_OPTIMIZATION_LEVEL[arch=*]" = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = "$(inherited)";
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "99511fa0-313a-4098-a9b5-4e006ca08614";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		2F834E84165541EC006238AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F7C77CA16A497B40084DAF1 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sunlight Foundation (3A9R2W6JVG)";
+				COPY_PHASE_STRIP = YES;
+				"EXCLUDED_SOURCE_FILE_NAMES[arch=*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "8F273449-2470-4879-8A1C-3800B939ADEA";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F834E86165541EC006238AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 736A965F3A20876DF0F3AE8A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/Congress-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Resources/Congress-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5149310d-ab29-4553-a030-bf476714b757";
+				SWIFT_OBJC_BRIDGING_HEADER = "CongressKit/Congress-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F834E87165541EC006238AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C7F9BE738322BBC5A2E2FEA /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Sunlight Foundation (3A9R2W6JVG)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/Congress-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Resources/Congress-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a27a3b20-9711-4746-8ee3-ca7b2e50eacd";
+				SWIFT_OBJC_BRIDGING_HEADER = "CongressKit/Congress-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F834E61165541EC006238AB /* Build configuration list for PBXProject "Congress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F834E83165541EC006238AB /* Debug */,
+				2F834E84165541EC006238AB /* Release */,
+				2F0F00D5167A6AB700C3344F /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F834E85165541EC006238AB /* Build configuration list for PBXNativeTarget "Congress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F834E86165541EC006238AB /* Debug */,
+				2F834E87165541EC006238AB /* Release */,
+				2F0F00D6167A6AB700C3344F /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F834E5E165541EC006238AB /* Project object */;
+}

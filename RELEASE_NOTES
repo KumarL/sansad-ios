@@ -1,0 +1,68 @@
+1.6
+- Hello iOS 8 only!
+- Send emails to your representatives via OpenCongress
+- Easily follow all legislators that represent a given location
+- Show legislator nicknames for when you are casually hanging out with a member of Congress
+- UI improvements
+- Various bug fixes
+
+
+1.5.2
+- Fix crashes on SFLegislator and SFImageButton
+- iPad icon size
+- Other bug fixes
+
+1.5/1.5.1
+- Push notifications
+- Visual improvements
+
+1.4.1
+- Fix layout issue with local legislators view
+- Further UI improvements
+
+1.4
+- Committee hearing details with description, time, location and related bills
+- Add upcoming committee hearings to your calendar
+- Share bills, legislators and committees via AirDrop
+- UI improvements
+- Various bug fixes
+
+1.3
+- iOS 7 support
+- Sharing improvements
+- Various bug fixes
+
+1.2.1
+- Fixed results when searching by bill number
+- Various bug fixes
+
+1.2
+- Committees
+- More relevant bill search results
+- In-app viewing of bill text
+- Navigate to bill from vote screen
+- cngr.es support for sharing committees
+- Upgrade to Google Analytics SDK v3.0
+- Basic bill search analytics
+- Pass user agent and app info headers to Congress API
+- Bug fixes
+
+1.1.3
+- Bug fixes on configuration parameters
+
+1.1.2
+- Detect and search on bill codes in search.
+- Modal alerts on network/data errors
+- Bug fixes
+
+1.1.1
+- Fine-tune analytics on legislator detail screen
+- Adjust list layout for starred items
+
+1.1
+- Explore legislators for your location and others on an interactive map
+- Review a legislator's latest votes and bill sponsorships
+
+1.0.1
+- Analytics, with opt-out setting
+- Minor design tweaks
