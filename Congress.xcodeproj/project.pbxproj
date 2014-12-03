@@ -326,7 +326,7 @@
 		2F7C09EF1843A33B00B28B82 /* SFDataTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataTableDataSource.h; sourceTree = "<group>"; };
 		2F7C09F01843A33B00B28B82 /* SFDataTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDataTableDataSource.m; sourceTree = "<group>"; };
 		2F7C77CA16A497B40084DAF1 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		2F834E67165541EC006238AB /* Congress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Congress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F834E67165541EC006238AB /* Sansad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sansad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F834E6B165541EC006238AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F834E6D165541EC006238AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F834E6F165541EC006238AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -743,7 +743,7 @@
 		2F834E68165541EC006238AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F834E67165541EC006238AB /* Congress.app */,
+				2F834E67165541EC006238AB /* Sansad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1262,7 +1262,7 @@
 			);
 			name = Congress;
 			productName = Congress;
-			productReference = 2F834E67165541EC006238AB /* Congress.app */;
+			productReference = 2F834E67165541EC006238AB /* Sansad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1644,7 +1644,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sansad;
 				PROVISIONING_PROFILE = "2a6f58d8-a024-492b-bac8-a70d07348a71";
 				SWIFT_OBJC_BRIDGING_HEADER = "CongressKit/Congress-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1743,7 +1743,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sansad;
 				PROVISIONING_PROFILE = "5149310d-ab29-4553-a030-bf476714b757";
 				SWIFT_OBJC_BRIDGING_HEADER = "CongressKit/Congress-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1783,7 +1783,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Sansad;
 				PROVISIONING_PROFILE = "a27a3b20-9711-4746-8ee3-ca7b2e50eacd";
 				SWIFT_OBJC_BRIDGING_HEADER = "CongressKit/Congress-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
