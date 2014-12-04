@@ -31,14 +31,16 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *url;
 
+// Legacy properties that have been modified
+@property (nonatomic, readonly) NSString *shortTitle;
+@property (nonatomic, readonly) NSString *officialTitle;
+
 @property (nonatomic, strong) NSString *billType;
 @property (nonatomic, strong) NSString *code;
 @property (nonatomic, strong) NSNumber *number;
 @property (nonatomic, strong) NSNumber *congress;
 @property (nonatomic, strong) NSNumber *abbreviated;
 @property (nonatomic, strong) NSString *chamber;
-@property (nonatomic, strong) NSString *shortTitle;
-@property (nonatomic, strong) NSString *officialTitle;
 @property (nonatomic, copy) NSString *sponsorId;
 @property (nonatomic, strong) NSDate *lastPassageVoteAt;
 @property (nonatomic, strong) NSDate *lastVoteAt;

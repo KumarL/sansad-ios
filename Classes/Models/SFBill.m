@@ -67,13 +67,6 @@
     }];
 }
 
-+ (NSValueTransformer *)shortTitleJSONTransformer {
-    return [MTLValueTransformer transformerWithBlock: ^id (NSString *str) {
-        NSArray *stringComponents = [str componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-        return [stringComponents componentsJoinedByString:@" "];
-    }];
-}
-
 + (NSValueTransformer *)lastActionAtJSONTransformer {
     return [MTLValueTransformer reversibleTransformerWithForwardBlock: ^(NSString *str) {
         id value = (str != nil) ? [[SFDateFormatterUtil isoDateTimeFormatter] dateFromString:str] : nil;
@@ -174,6 +167,14 @@
         _displayName = [[NSValueTransformer valueTransformerForName:SFBillIdTransformerName] transformedValue:self.billId];
     }
     return _displayName;
+}
+
+- (NSString *)shortTitle {
+    return self.title;
+}
+
+- (NSString *)officialTitle {
+    return self.title;
 }
 
 - (NSArray *)actionsAndVotes {
