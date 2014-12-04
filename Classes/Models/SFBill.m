@@ -23,6 +23,7 @@
 }
 
 @synthesize lastActionAtIsDateTime = _lastActionAtIsDateTime;
+@synthesize shortTitle = _shortTitle;
 
 #pragma mark - initWithDictionary
 
@@ -170,11 +171,21 @@
 }
 
 - (NSString *)shortTitle {
-    return self.title;
+    if (!_shortTitle) {
+        // We strip the year suffix, if it exists, from the title
+        _shortTitle = [[self class] stripYearFromTitle:self.title];
+    }
+    return _shortTitle;
 }
 
 - (NSString *)officialTitle {
+    // The regular title is official title
     return self.title;
+}
+
+- (NSString *)shortSummary {
+    // There is no short summary
+    return self.summary;
 }
 
 - (NSArray *)actionsAndVotes {
@@ -252,6 +263,24 @@
     }
     NSTextCheckingResult *result = [regex firstMatchInString:searchText options:NSMatchingReportCompletion range:NSMakeRange(0, [searchText length])];
     return result;
+}
+
++ (NSString *)stripYearFromTitle:(NSString *)completeTitle {
+    NSString *strippedTitle = completeTitle; // The default value
+    NSRange range = [completeTitle rangeOfString:@", " options:NSBackwardsSearch];
+    if (range.location != NSNotFound) {
+        NSUInteger rangeEndLocation = range.location + range.length;
+        NSString *billYear = [completeTitle substringFromIndex:rangeEndLocation];
+        if ([billYear length] == 4) {
+            // We found the year string
+            NSScanner *yearScanner = [NSScanner scannerWithString:billYear];
+            NSInteger year;
+            if ([yearScanner scanInteger:&year]) {
+                strippedTitle = [completeTitle substringToIndex:range.location];
+            }
+        }
+    }
+    return strippedTitle;
 }
 
 @end

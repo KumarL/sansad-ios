@@ -34,6 +34,7 @@
 // Legacy properties that have been modified
 @property (nonatomic, readonly) NSString *shortTitle;
 @property (nonatomic, readonly) NSString *officialTitle;
+@property (nonatomic, readonly) NSString *shortSummary;
 
 @property (nonatomic, strong) NSString *billType;
 @property (nonatomic, strong) NSString *code;
@@ -57,7 +58,6 @@
 @property (nonatomic, strong) NSString *senatePassageResult;
 @property (nonatomic, strong) NSString *houseOverrideResult;
 @property (nonatomic, strong) NSString *senateOverrideResult;
-@property (nonatomic, strong) NSString *shortSummary;
 @property (nonatomic, strong) SFLegislator *sponsor;
 @property (nonatomic, strong) NSArray *actions;
 @property (nonatomic, strong) NSArray *cosponsorIds;
